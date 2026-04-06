@@ -1,0 +1,25 @@
+{
+  "dataPath": "./",
+  "packDirs": {
+    "devil-fruit-artifacts": {
+      "source": "src/packs/devil-fruit-artifacts",
+      "db":     "packs/devil-fruit-artifacts",
+      "type":   "Item"
+    },
+    "seastone-items": {
+      "source": "src/packs/seastone-items",
+      "db":     "packs/seastone-items",
+      "type":   "Item"
+    },
+    "sea-bound-effects": {
+      "source": "src/packs/sea-bound-effects",
+      "db":     "packs/sea-bound-effects",
+      "type":   "Item"
+    },
+    "macros": {
+      "source": "src/packs/macros",
+      "db":     "packs/macros",
+      "type":   "Macro"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "_id": "seaboundsubmerge001",
+  "name": "Sea-Bound (Submerged)",
+  "type": "effect",
+  "img": "icons/magic/water/water-bubbles-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Sea-Bound (Submerged)</strong> — You are fully submerged in seawater.</p><p>You are <strong>@UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned}</strong> until you are removed from the water. While submerged, all actions and passives granted by your Devil Fruit archetype are suppressed.</p><p><em>Only a creature that does not have the Sea-Bound trait can pull you free.</em></p>",
+      "gm": ""
+    },
+    "slug": "sea-bound-submerged",
+    "traits": {
+      "value": ["sea-bound"],
+      "rarity": "common"
+    },
+    "level": { "value": 0 },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "sustained": false,
+      "expiry": null
+    },
+    "tokenIcon": { "show": true },
+    "badge": null,
+    "rules": [
+      {
+        "key": "AdjustCondition",
+        "condition": "stunned",
+        "value": 9999,
+        "label": "Sea-Bound: Submerged (Stunned while underwater)"
+      },
+      {
+        "key": "RollOption",
+        "domain": "all",
+        "option": "sea-bound",
+        "value": true
+      },
+      {
+        "key": "RollOption",
+        "domain": "all",
+        "option": "devil-fruit:suppressed",
+        "value": true
+      }
+    ]
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "effectType": "sea-bound-submerged"
+    }
+  }
+}

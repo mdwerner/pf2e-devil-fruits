@@ -1,0 +1,64 @@
+{
+  "id": "pf2e-devil-fruit-artifacts",
+  "title": "PF2E: Devil Fruit Archetype Artifacts & Seastone",
+  "description": "Adds Archetype Artifacts for Devil Fruit users, the Sea-Bound trait, and the Seastone material for One Piece homebrew campaigns using the PF2E system.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "authors": [
+    {
+      "name": "Michael Werner"
+    }
+  ],
+  "systems": ["pf2e"],
+  "esmodules": ["scripts/main.mjs"],
+  "styles": ["styles/module.css"],
+  "templates": [
+    "templates/sea-bound-panel.hbs"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "devil-fruit-artifacts",
+      "label": "Devil Fruit Archetype Artifacts",
+      "path": "packs/devil-fruit-artifacts",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "seastone-items",
+      "label": "Seastone Material Items",
+      "path": "packs/seastone-items",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "sea-bound-effects",
+      "label": "Sea-Bound Effects",
+      "path": "packs/sea-bound-effects",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "macros",
+      "label": "Devil Fruit Macros",
+      "path": "packs/macros",
+      "type": "Macro",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    }
+  ],
+  "url": "",
+  "manifest": "",
+  "download": ""
+}

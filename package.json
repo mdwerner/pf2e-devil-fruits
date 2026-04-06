@@ -1,0 +1,16 @@
+{
+  "name": "pf2e-devil-fruit-artifacts",
+  "version": "1.0.0",
+  "description": "FoundryVTT module — PF2E Devil Fruit Archetype Artifacts & Seastone",
+  "type": "module",
+  "scripts": {
+    "build":       "npm run build:packs",
+    "build:packs": "fvtt package pack --inputDirectory src/packs --outputDirectory packs",
+    "unpack":      "fvtt package unpack --inputDirectory packs --outputDirectory src/packs",
+    "clean":       "rimraf packs/devil-fruit-artifacts packs/seastone-items packs/sea-bound-effects packs/macros"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^1.0.0",
+    "rimraf": "^5.0.0"
+  }
+}

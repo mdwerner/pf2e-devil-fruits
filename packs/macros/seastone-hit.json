@@ -1,0 +1,14 @@
+{
+  "_id": "seastoneHitMacro001",
+  "name": "Seastone Weapon Hit",
+  "type": "script",
+  "img": "icons/weapons/daggers/dagger-curved-grey.webp",
+  "scope": "global",
+  "command": "await game.devilFruitArtifacts.applySeastoneHit();",
+  "author": "",
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "macroType": "seastone-hit"
+    }
+  }
+}

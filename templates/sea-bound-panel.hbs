@@ -1,0 +1,74 @@
+<div class="sea-bound-panel-content">
+
+  <div class="panel-toolbar">
+    <button data-action="evaluate-all" title="Re-scan all tokens against water regions and Seastone inventory">
+      <i class="fas fa-sync-alt"></i> Re-Evaluate All
+    </button>
+    <button data-action="clear-all" class="danger" title="Remove all Sea-Bound effects from all tokens">
+      <i class="fas fa-times-circle"></i> Clear All
+    </button>
+  </div>
+
+  {{#if hasActors}}
+  <table class="sea-bound-table">
+    <thead>
+      <tr>
+        <th class="col-img"></th>
+        <th class="col-name">Actor</th>
+        <th class="col-state">State</th>
+        <th class="col-seastone" title="Carrying Seastone?"><i class="fas fa-gem"></i></th>
+        <th class="col-actions">Override</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each actors}}
+      <tr data-actor-id="{{id}}" data-token-id="{{tokenId}}" class="actor-row state-{{state}}">
+        <td class="col-img">
+          <img src="{{img}}" alt="{{name}}" width="32" height="32" />
+        </td>
+        <td class="col-name">
+          <a data-action="pan-to" title="Pan to token">{{name}}</a>
+        </td>
+        <td class="col-state">
+          <span class="state-badge state-{{state}}">{{stateLabel}}</span>
+        </td>
+        <td class="col-seastone">
+          {{#if hasSeastone}}<i class="fas fa-gem seastone-active" title="Carrying Seastone"></i>{{/if}}
+        </td>
+        <td class="col-actions">
+          <button data-action="set-state" data-state="none"
+            class="state-btn {{#if (eq state 'none')}}active{{/if}}"
+            title="Clear Sea-Bound">
+            <i class="fas fa-check-circle"></i>
+          </button>
+          <button data-action="set-state" data-state="partial"
+            class="state-btn warning {{#if (eq state 'partial')}}active{{/if}}"
+            title="Apply Partial (Slowed 1, Clumsy 1)">
+            <i class="fas fa-water"></i>
+          </button>
+          <button data-action="set-state" data-state="submerged"
+            class="state-btn danger {{#if (eq state 'submerged')}}active{{/if}}"
+            title="Apply Submerged (Stunned)">
+            <i class="fas fa-skull"></i>
+          </button>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  {{else}}
+  <div class="no-actors">
+    <i class="fas fa-anchor"></i>
+    <p>No Sea-Bound actors on this scene.</p>
+    <p class="hint">Actors with a Devil Fruit artifact in their inventory will appear here.</p>
+  </div>
+  {{/if}}
+
+  <div class="panel-legend">
+    <span class="state-badge state-none">Clear</span> No effect &nbsp;|&nbsp;
+    <span class="state-badge state-partial">Partial</span> Slowed 1 + Clumsy 1 &nbsp;|&nbsp;
+    <span class="state-badge state-submerged">Submerged</span> Stunned
+  </div>
+
+</div>

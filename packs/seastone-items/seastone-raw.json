@@ -1,0 +1,35 @@
+{
+  "_id": "seastoneraw000001",
+  "name": "Seastone (Raw Chunk)",
+  "type": "equipment",
+  "img": "icons/commodities/stone/rock-salt-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Material: Seastone</strong></p><p>A dense, sea-grey mineral mined from the ocean floor. It resonates with the same mysterious energy as the sea itself. To Devil Fruit users, even brief contact feels like drowning.</p><p><strong>Sea-Bound Interaction:</strong> A creature with the <strong>Sea-Bound</strong> trait who carries, is bound by, or is struck by a Seastone item triggers their Sea-Bound condition (Slowed 1, Clumsy 1, Devil Fruit abilities suppressed) for as long as contact is maintained.</p><p>Seastone does not affect creatures without the Sea-Bound trait.</p><hr/><p><strong>Hardness 9 / HP 36 / BT 18</strong> (Low-Grade) — see the Seastone material entry for Standard and High grades.</p>",
+      "gm": ""
+    },
+    "slug": "seastone-raw-chunk",
+    "traits": {
+      "value": ["seastone"],
+      "rarity": "rare"
+    },
+    "level": { "value": 5 },
+    "price": { "value": { "gp": 140 } },
+    "quantity": 1,
+    "bulk": { "value": "1" },
+    "equipped": {
+      "carryType": "worn",
+      "inSlot": false,
+      "invested": null
+    },
+    "usage": { "value": "carried" },
+    "rules": [],
+    "category": "held",
+    "group": null,
+    "baseItem": null,
+    "material": { "type": "seastone", "grade": "low" }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": { "itemType": "seastone-material" }
+  }
+}

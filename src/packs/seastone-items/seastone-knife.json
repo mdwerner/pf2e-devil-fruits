@@ -1,0 +1,46 @@
+{
+  "_id": "seastoneknife0001",
+  "name": "Seastone Knife",
+  "type": "weapon",
+  "img": "icons/weapons/daggers/dagger-curved-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Seastone Knife</strong> <em>Item 11</em></p><p><strong>Rare, Agile, Finesse, Seastone, Thrown 10 ft.</strong></p><p>A slim knife with a blade of high-grade Seastone. The stone holds a wickedly sharp edge and carries a particular menace for those with Devil Fruit powers.</p><p><strong>Sea-Bound on Hit:</strong> When you Strike a creature with the Sea-Bound trait with this weapon, the target must succeed at a DC 28 Fortitude save or become afflicted by their Sea-Bound condition (Slowed 1, Clumsy 1, archetype suppressed) for 1 round. On a critical failure, the duration is 1 minute.</p><p><em>The stone blade is still sharp against ordinary foes — it just doesn't have any supernatural effect on them.</em></p><p><strong>Hardness 18 / HP 72 / BT 36</strong></p>",
+      "gm": "<p>The Sea-Bound on Hit effect is narrative — implement via an inline roll macro or a token effect. The module does not auto-apply timed Sea-Bound from weapon hits (only from sustained contact).</p>"
+    },
+    "slug": "seastone-knife",
+    "traits": {
+      "value": ["agile", "finesse", "seastone", "thrown-10"],
+      "rarity": "rare"
+    },
+    "level": { "value": 11 },
+    "price": { "value": { "gp": 1400 } },
+    "quantity": 1,
+    "bulk": { "value": "L" },
+    "equipped": {
+      "carryType": "held",
+      "inSlot": true,
+      "invested": null
+    },
+    "usage": { "value": "held-in-one-hand" },
+    "rules": [],
+    "category": "martial",
+    "group": "knife",
+    "baseItem": "knife",
+    "material": { "type": "seastone", "grade": "high" },
+    "damage": {
+      "dice": 1,
+      "die": "d4",
+      "damageType": "piercing",
+      "modifier": 0
+    },
+    "range": null,
+    "reload": { "value": "" },
+    "weapon": {
+      "type": { "value": "melee" }
+    }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": { "itemType": "seastone-weapon" }
+  }
+}

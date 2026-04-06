@@ -1,0 +1,25 @@
+{
+  "PF2E-DEVIL-FRUIT": {
+    "Material": {
+      "Seastone": "Seastone"
+    },
+    "Trait": {
+      "SeaBound": "Sea-Bound",
+      "SeaBoundDesc": "You are weakened by seawater and Seastone. While submerged in standing seawater (at least waist-deep) or in contact with Seastone, you are Slowed 1, Clumsy 1, and cannot use any actions or passives granted by your Devil Fruit archetype. If fully submerged, you are Stunned until removed from the water.",
+      "Seastone": "Seastone",
+      "SeastoneDesc": "This item is composed of or contains Seastone. It triggers the Sea-Bound condition on Devil Fruit archetype users while in contact."
+    },
+    "Effect": {
+      "SeaBoundPartial": "Sea-Bound (Partial)",
+      "SeaBoundSubmerged": "Sea-Bound (Submerged)"
+    },
+    "Settings": {
+      "AutoApply": "Auto-Apply Sea-Bound",
+      "AutoApplyHint": "Automatically apply Sea-Bound conditions when a Devil Fruit user is in seawater.",
+      "CheckElevation": "Use Elevation for Submersion Check",
+      "CheckElevationHint": "Treat negative token elevation as fully submerged.",
+      "SeastoneTag": "Seastone Region Tag",
+      "SeastoneTagHint": "Region behavior tag used to mark seawater areas on the scene."
+    }
+  }
+}

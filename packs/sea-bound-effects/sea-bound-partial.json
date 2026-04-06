@@ -1,0 +1,55 @@
+{
+  "_id": "seaboundpartial0001",
+  "name": "Sea-Bound (Partial)",
+  "type": "effect",
+  "img": "icons/magic/water/wave-water-splash-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Sea-Bound (Partial)</strong> — You are in contact with seawater or Seastone.</p><p>While this effect is active, you are <strong>@UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1}</strong> and <strong>@UUID[Compendium.pf2e.conditionitems.Item.Clumsy]{Clumsy 1}</strong>. All actions and passives granted by your Devil Fruit archetype are suppressed.</p><p>This effect is removed when you leave seawater and are no longer in contact with Seastone.</p>",
+      "gm": ""
+    },
+    "slug": "sea-bound-partial",
+    "traits": {
+      "value": ["sea-bound"],
+      "rarity": "common"
+    },
+    "level": { "value": 0 },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "sustained": false,
+      "expiry": null
+    },
+    "tokenIcon": { "show": true },
+    "badge": null,
+    "rules": [
+      {
+        "key": "AdjustCondition",
+        "condition": "slowed",
+        "value": 1
+      },
+      {
+        "key": "AdjustCondition",
+        "condition": "clumsy",
+        "value": 1
+      },
+      {
+        "key": "RollOption",
+        "domain": "all",
+        "option": "sea-bound",
+        "value": true
+      },
+      {
+        "key": "RollOption",
+        "domain": "all",
+        "option": "devil-fruit:suppressed",
+        "value": true
+      }
+    ]
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "effectType": "sea-bound-partial"
+    }
+  }
+}
