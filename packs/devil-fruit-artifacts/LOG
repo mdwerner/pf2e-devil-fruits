@@ -1,1 +1,5 @@
-2026/04/05-17:18:03.529 c744 Delete type=3 #1
+2026/04/06-10:01:01.037 348 Delete type=3 #1
+2026/04/06-10:01:01.044 7d30 Level-0 table #5: started
+2026/04/06-10:01:01.047 7d30 Level-0 table #5: 4220 bytes OK
+2026/04/06-10:01:01.048 7d30 Delete type=0 #3
+2026/04/06-10:01:01.049 7d30 Manual compaction at level-0 from '!items!devilfruitgomu0001' @ 72057594037927935 : 1 .. '!items!devilfruityomi0001' @ 0 : 0; will stop at (end)

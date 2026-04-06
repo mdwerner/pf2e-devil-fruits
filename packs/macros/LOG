@@ -1,1 +1,5 @@
-2026/04/05-17:18:03.563 7e58 Delete type=3 #1
+2026/04/06-10:01:08.918 53bc Delete type=3 #1
+2026/04/06-10:01:08.927 a4ac Level-0 table #5: started
+2026/04/06-10:01:08.930 a4ac Level-0 table #5: 777 bytes OK
+2026/04/06-10:01:08.932 a4ac Delete type=0 #3
+2026/04/06-10:01:08.932 a4ac Manual compaction at level-0 from '!macros!seaBoundEvalAll001' @ 72057594037927935 : 1 .. '!macros!seastoneHitMacro001' @ 0 : 0; will stop at (end)

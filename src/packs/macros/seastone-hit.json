@@ -1,5 +1,6 @@
 {
   "_id": "seastoneHitMacro001",
+  "_key": "!macros!seastoneHitMacro001",
   "name": "Seastone Weapon Hit",
   "type": "script",
   "img": "icons/weapons/daggers/dagger-curved-grey.webp",

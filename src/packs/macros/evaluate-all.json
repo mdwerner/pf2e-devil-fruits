@@ -1,5 +1,6 @@
 {
   "_id": "seaBoundEvalAll001",
+  "_key": "!macros!seaBoundEvalAll001",
   "name": "Sea-Bound: Evaluate All Tokens",
   "type": "script",
   "img": "icons/magic/water/wave-water-splash-teal.webp",

@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "build":       "npm run build:packs",
-    "build:packs": "fvtt package pack --inputDirectory src/packs --outputDirectory packs",
-    "unpack":      "fvtt package unpack --inputDirectory packs --outputDirectory src/packs",
+    "build:packs": "fvtt package pack --type Module -n devil-fruit-artifacts --inputDirectory src/packs/devil-fruit-artifacts --outputDirectory packs && fvtt package pack --type Module -n seastone-items --inputDirectory src/packs/seastone-items --outputDirectory packs && fvtt package pack --type Module -n sea-bound-effects --inputDirectory src/packs/sea-bound-effects --outputDirectory packs && fvtt package pack --type Module -n macros --inputDirectory src/packs/macros --outputDirectory packs",
+    "unpack":      "fvtt package unpack --type Module -n devil-fruit-artifacts --inputDirectory packs/devil-fruit-artifacts --outputDirectory src/packs/devil-fruit-artifacts && fvtt package unpack --type Module -n seastone-items --inputDirectory packs/seastone-items --outputDirectory src/packs/seastone-items && fvtt package unpack --type Module -n sea-bound-effects --inputDirectory packs/sea-bound-effects --outputDirectory src/packs/sea-bound-effects && fvtt package unpack --type Module -n macros --inputDirectory packs/macros --outputDirectory src/packs/macros",
     "clean":       "rimraf packs/devil-fruit-artifacts packs/seastone-items packs/sea-bound-effects packs/macros"
   },
   "devDependencies": {
