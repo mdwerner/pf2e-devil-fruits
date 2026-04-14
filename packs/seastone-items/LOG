@@ -1,5 +1,15 @@
-2026/04/06-10:01:03.563 8f20 Delete type=3 #1
-2026/04/06-10:01:03.569 795c Level-0 table #5: started
-2026/04/06-10:01:03.572 795c Level-0 table #5: 2745 bytes OK
-2026/04/06-10:01:03.573 795c Delete type=0 #3
-2026/04/06-10:01:03.573 795c Manual compaction at level-0 from '!items!seastoneknife0001' @ 72057594037927935 : 1 .. '!items!seastoneraw000001' @ 0 : 0; will stop at (end)
+2026/04/14-10:06:55.909 3884 Recovering log #4
+2026/04/14-10:06:55.915 3884 Delete type=0 #4
+2026/04/14-10:06:55.915 3884 Delete type=3 #2
+2026/04/14-10:06:55.921 716c Level-0 table #9: started
+2026/04/14-10:06:55.924 716c Level-0 table #9: 2745 bytes OK
+2026/04/14-10:06:55.925 716c Delete type=0 #7
+2026/04/14-10:06:55.926 716c Manual compaction at level-0 from '!items!seastoneknife0001' @ 72057594037927935 : 1 .. '!items!seastoneraw000001' @ 0 : 0; will stop at (end)
+2026/04/14-10:06:55.926 716c Manual compaction at level-1 from '!items!seastoneknife0001' @ 72057594037927935 : 1 .. '!items!seastoneraw000001' @ 0 : 0; will stop at '!items!seastoneraw000001' @ 5 : 1
+2026/04/14-10:06:55.926 716c Compacting 1@1 + 1@2 files
+2026/04/14-10:06:55.928 716c Generated table #10@1: 3 keys, 2745 bytes
+2026/04/14-10:06:55.929 716c Compacted 1@1 + 1@2 files => 2745 bytes
+2026/04/14-10:06:55.929 716c compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/04/14-10:06:55.930 716c Delete type=2 #5
+2026/04/14-10:06:55.930 716c Delete type=2 #9
+2026/04/14-10:06:55.931 716c Manual compaction at level-1 from '!items!seastoneraw000001' @ 5 : 1 .. '!items!seastoneraw000001' @ 0 : 0; will stop at (end)

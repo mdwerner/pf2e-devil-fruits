@@ -1,0 +1,37 @@
+{
+  "_id": "awakenedrubbr0001",
+  "_key": "!items!awakenedrubbr0001",
+  "name": "Awakened Rubber",
+  "type": "feat",
+  "img": "icons/magic/nature/root-vine-burst-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Archetype</strong></p><p>Your rubber body reaches its pinnacle, awakening to its fullest passive potential. You gain the following permanent benefits (suppressed while Sea-Bound):</p><ul><li>You are <strong>immune to bludgeoning damage</strong> (replaces resistance 5 from the dedication).</li><li>You are <strong>immune to falling damage</strong>.</li><li><strong>Rubber Deflect [free action]</strong> (trigger: a non-magical ranged Strike targets you; frequency: once per round) — Your rubber body absorbs the projectile. The triggering attack automatically misses.</li></ul>",
+      "gm": ""
+    },
+    "rules": [
+      {
+        "key": "ImmunityData",
+        "type": ["bludgeoning"],
+        "predicate": ["!devil-fruit:suppressed"]
+      }
+    ],
+    "slug": "awakened-rubber",
+    "traits": {
+      "value": ["archetype"],
+      "rarity": "common"
+    },
+    "level": { "value": 18 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Rubber-Human Dedication" }]
+    },
+    "actionType": { "value": "passive" },
+    "actions": { "value": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "rubber-human"
+    }
+  }
+}

@@ -1,13 +1,13 @@
 {
   "name": "pf2e-devil-fruit-artifacts",
   "version": "1.0.0",
-  "description": "FoundryVTT module — PF2E Devil Fruit Archetype Artifacts & Seastone",
+  "description": "FoundryVTT module \u2014 PF2E Devil Fruit Archetype Artifacts & Seastone",
   "type": "module",
   "scripts": {
-    "build":       "npm run build:packs",
-    "build:packs": "fvtt package pack --type Module -n devil-fruit-artifacts --inputDirectory src/packs/devil-fruit-artifacts --outputDirectory packs && fvtt package pack --type Module -n seastone-items --inputDirectory src/packs/seastone-items --outputDirectory packs && fvtt package pack --type Module -n sea-bound-effects --inputDirectory src/packs/sea-bound-effects --outputDirectory packs && fvtt package pack --type Module -n macros --inputDirectory src/packs/macros --outputDirectory packs",
-    "unpack":      "fvtt package unpack --type Module -n devil-fruit-artifacts --inputDirectory packs/devil-fruit-artifacts --outputDirectory src/packs/devil-fruit-artifacts && fvtt package unpack --type Module -n seastone-items --inputDirectory packs/seastone-items --outputDirectory src/packs/seastone-items && fvtt package unpack --type Module -n sea-bound-effects --inputDirectory packs/sea-bound-effects --outputDirectory src/packs/sea-bound-effects && fvtt package unpack --type Module -n macros --inputDirectory packs/macros --outputDirectory src/packs/macros",
-    "clean":       "rimraf packs/devil-fruit-artifacts packs/seastone-items packs/sea-bound-effects packs/macros"
+    "build": "npm run build:packs",
+    "build:packs": "fvtt package pack --type Module -n devil-fruit-artifacts --inputDirectory src/packs/devil-fruit-artifacts --outputDirectory packs && fvtt package pack --type Module -n seastone-items --inputDirectory src/packs/seastone-items --outputDirectory packs && fvtt package pack --type Module -n sea-bound-effects --inputDirectory src/packs/sea-bound-effects --outputDirectory packs && fvtt package pack --type Module -n macros --inputDirectory src/packs/macros --outputDirectory packs && fvtt package pack --type Module -n rubber-human-feats --inputDirectory src/packs/rubber-human-feats --outputDirectory packs",
+    "unpack": "fvtt package unpack --type Module -n devil-fruit-artifacts --inputDirectory packs/devil-fruit-artifacts --outputDirectory src/packs/devil-fruit-artifacts && fvtt package unpack --type Module -n seastone-items --inputDirectory packs/seastone-items --outputDirectory src/packs/seastone-items && fvtt package unpack --type Module -n sea-bound-effects --inputDirectory packs/sea-bound-effects --outputDirectory src/packs/sea-bound-effects && fvtt package unpack --type Module -n macros --inputDirectory packs/macros --outputDirectory src/packs/macros && fvtt package unpack --type Module -n rubber-human-feats --inputDirectory packs/rubber-human-feats --outputDirectory src/packs/rubber-human-feats",
+    "clean": "rimraf packs/devil-fruit-artifacts packs/seastone-items packs/sea-bound-effects packs/macros packs/rubber-human-feats"
   },
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^1.0.0",

@@ -1,0 +1,31 @@
+{
+  "_id": "gearthird00000001",
+  "_key": "!items!gearthird00000001",
+  "name": "Gear Third",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-fist-large-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[2 actions] Archetype, Concentrate, Morph</strong></p><p>You bite your thumb and blow air into your skeleton, inflating a limb to enormous proportions. Make a single unarmed Strike with reach <strong>15 feet</strong>. On a hit, this Strike deals an additional <strong>6d6 bludgeoning damage</strong>. The target must succeed at a DC equal to (10 + your level + your Strength modifier) Fortitude save or be <strong>knocked prone and pushed 15 feet</strong>.</p><p><strong>Aftershock:</strong> Until the start of your next turn, your body briefly shrinks to diminutive size — your Speed is halved and you take a −2 penalty to attack rolls.</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "gm": ""
+    },
+    "rules": [],
+    "slug": "gear-third",
+    "traits": {
+      "value": ["archetype", "concentrate", "morph"],
+      "rarity": "common"
+    },
+    "level": { "value": 14 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Rubber-Human Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 2 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "rubber-human"
+    }
+  }
+}

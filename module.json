@@ -12,9 +12,15 @@
       "name": "Michael Werner"
     }
   ],
-  "systems": ["pf2e"],
-  "esmodules": ["scripts/main.mjs"],
-  "styles": ["styles/module.css"],
+  "systems": [
+    "pf2e"
+  ],
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/module.css"
+  ],
   "templates": [
     "templates/sea-bound-panel.hbs"
   ],
@@ -32,7 +38,10 @@
       "path": "packs/devil-fruit-artifacts",
       "type": "Item",
       "system": "pf2e",
-      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "seastone-items",
@@ -40,7 +49,10 @@
       "path": "packs/seastone-items",
       "type": "Item",
       "system": "pf2e",
-      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "sea-bound-effects",
@@ -48,14 +60,31 @@
       "path": "packs/sea-bound-effects",
       "type": "Item",
       "system": "pf2e",
-      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "macros",
       "label": "Devil Fruit Macros",
       "path": "packs/macros",
       "type": "Macro",
-      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "rubber-human-feats",
+      "label": "Rubber-Human Archetype Feats",
+      "path": "packs/rubber-human-feats",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "url": "",

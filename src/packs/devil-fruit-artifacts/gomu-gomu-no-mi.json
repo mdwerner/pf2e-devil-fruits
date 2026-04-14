@@ -1,13 +1,13 @@
 {
   "_id": "devilfruitgomu0001",
   "_key": "!items!devilfruitgomu0001",
-  "name": "Devil Fruit: Gomu Gomu no Mi (Example)",
+  "name": "Devil Fruit: Gomu Gomu no Mi",
   "type": "equipment",
   "img": "icons/consumables/fruit/grapes-purple.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Archetype Artifact — Devil Fruit (Paramecia)</strong></p><p>A round, bumpy fruit with a swirling pattern. Consuming it permanently transforms the user's body into rubber, granting the <strong>Rubber-Human archetype</strong>.</p><hr/><p><strong>Passive:</strong> Your body becomes rubber. You are immune to electricity damage and gain resistance 5 to bludgeoning damage. Your unarmed Strikes deal bludgeoning damage and have the <em>nonlethal</em> and <em>reach</em> traits (range 10 feet).</p><p><strong>Activate</strong> [one-action] (concentrate) — You stretch a limb to deliver a melee Strike at up to 20 feet.</p><hr/><p><strong>Trait: Sea-Bound.</strong> While submerged in standing seawater (at least waist-deep) or in contact with Seastone, you are Slowed 1, Clumsy 1, and cannot use any actions or passives granted by your Devil Fruit archetype. If fully submerged, you are Stunned until removed from the water.</p><p><em>A creature may only ever consume one Devil Fruit. Consuming a second is instantly fatal.</em></p>",
-      "gm": "<p>This is a placeholder for a Paramecia-type fruit. Expand the rules array with your campaign's full feat chain and rule elements. The rubber body immunity/resistance is listed in description only — add REs as needed.</p>"
+      "value": "<p><strong>Archetype Artifact — Devil Fruit (Paramecia)</strong></p><p>A round, lumpy fruit covered in a swirling spiral pattern with the texture of hard rubber. Consuming the Gomu Gomu no Mi permanently transforms your body into living rubber, granting the <strong>Rubber-Human archetype</strong>.</p><hr/><p><strong>Rubber-Human Archetype Progression</strong></p><p>Upon consuming this fruit, you immediately gain the <em>Rubber-Human Dedication</em> feat. Additional archetype feats are automatically unlocked as you level up:</p><ul><li><strong>Level 4:</strong> Gum-Gum Pistol — Stretched rocket-fist strike at 20 feet</li><li><strong>Level 6:</strong> Gum-Gum Whip — Sweeping leg strike in a 15-foot line</li><li><strong>Level 8:</strong> Gum-Gum Bazooka — Double-fist slam with push effect</li><li><strong>Level 10:</strong> Gum-Gum Storm — Rapid barrage of 4 strikes in all directions</li><li><strong>Level 12:</strong> Gear Second — Speed and power boost, steam form</li><li><strong>Level 14:</strong> Gear Third — Inflated giant limb for massive single strike</li><li><strong>Level 16:</strong> Gear Fourth: Bound Man — Fly speed, bludgeoning immunity, 2d8 strikes</li><li><strong>Level 18:</strong> Awakened Rubber — Permanent bludgeoning immunity, deflect projectiles</li><li><strong>Level 20:</strong> Gear Fifth: Nika Awakening — Ultimate Sun God form</li></ul><hr/><p><strong>Trait: Sea-Bound.</strong> While submerged in standing seawater (at least waist-deep) or in contact with Seastone, you are Slowed 1, Clumsy 1, and cannot use any actions or passives granted by your Devil Fruit archetype. If fully submerged, you are Stunned until removed from the water.</p><p><em>A creature may only ever consume one Devil Fruit. Consuming a second is instantly fatal.</em></p>",
+      "gm": "<p>This artifact grants the full Rubber-Human archetype via GrantItem rule elements. The dedication feat is granted immediately; the nine progression feats use level predicates ({\"gte\": [\"actor:level\", N]}) and are auto-granted as the character levels up. If a predicate format fails in your PF2E version, manually grant feats from the <strong>Rubber-Human Feats</strong> compendium pack. All feat abilities carry the !devil-fruit:suppressed predicate via the Sea-Bound effect system.</p>"
     },
     "slug": "devil-fruit-gomu-gomu-no-mi",
     "traits": {
@@ -30,17 +30,73 @@
         "add": ["sea-bound"]
       },
       {
-        "key": "DamageAlteration",
-        "property": "immunity",
-        "itemType": "condition",
-        "slug": "electricity",
-        "predicate": ["!devil-fruit:suppressed"]
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.rubber-human-feats.Item.rubberhumandedic01",
+        "flag": "rubberHumanDedication",
+        "onDeleteActions": { "grantee": "restrict" }
       },
       {
-        "key": "Resistance",
-        "type": "bludgeoning",
-        "value": 5,
-        "predicate": ["!devil-fruit:suppressed"]
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.rubber-human-feats.Item.gumgumpistol00001",
+        "flag": "gumGumPistolGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 4]}]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.rubber-human-feats.Item.gumgumwhip0000001",
+        "flag": "gumGumWhipGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 6]}]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.rubber-human-feats.Item.gumgumbazooka0001",
+        "flag": "gumGumBazookaGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 8]}]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.rubber-human-feats.Item.gumgumstorm000001",
+        "flag": "gumGumStormGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 10]}]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.rubber-human-feats.Item.gearsecond0000001",
+        "flag": "gearSecondGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 12]}]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.rubber-human-feats.Item.gearthird00000001",
+        "flag": "gearThirdGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 14]}]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.rubber-human-feats.Item.gearfourthbm00001",
+        "flag": "gearFourthGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 16]}]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.rubber-human-feats.Item.awakenedrubbr0001",
+        "flag": "awakenedRubberGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 18]}]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.rubber-human-feats.Item.gearfifthnka00001",
+        "flag": "gearFifthGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 20]}]
       }
     ],
     "category": "held",
