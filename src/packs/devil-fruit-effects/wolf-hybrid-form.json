@@ -1,0 +1,64 @@
+{
+  "_id": "wolfhybrideffect1",
+  "_key": "!items!wolfhybrideffect1",
+  "name": "Wolf: Hybrid Form",
+  "type": "effect",
+  "img": "icons/creatures/mammals/wolf-black.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are partially transformed into a wolf-human hybrid. You gain the following benefits while this effect is active and your Devil Fruit is not suppressed:</p><ul><li>Speed +10 feet</li><li>+2 status bonus to Athletics and Perception</li><li>Unarmed Strikes become Wolf Bite (1d10 piercing, trip, grapple) and Wolf Claws (1d6 slashing, agile, versatile P)</li><li>Unarmed Strikes are treated as magical</li></ul><p>Remove this effect to revert to human form. Replace with <strong>Wolf: Full Beast Form</strong> to fully transform.</p>",
+      "gm": "<p>This effect sets the wolf-human:hybrid-form roll option, which gates the Apex Wolf feat's physical resistance. The speed and skill bonuses are suppressed while Sea-Bound via their predicate.</p>"
+    },
+    "slug": "wolf-hybrid-form",
+    "traits": {
+      "value": ["morph"],
+      "rarity": "common"
+    },
+    "level": { "value": 0 },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "sustained": false,
+      "expiry": null
+    },
+    "tokenIcon": { "show": true },
+    "badge": null,
+    "rules": [
+      {
+        "key": "RollOption",
+        "domain": "all",
+        "option": "wolf-human:hybrid-form",
+        "value": true
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "speed",
+        "type": "status",
+        "value": 10,
+        "label": "Wolf Hybrid Form",
+        "predicate": ["!devil-fruit:suppressed"]
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "athletics",
+        "type": "status",
+        "value": 2,
+        "label": "Wolf Hybrid Form",
+        "predicate": ["!devil-fruit:suppressed"]
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "perception",
+        "type": "status",
+        "value": 2,
+        "label": "Wolf Hybrid Form",
+        "predicate": ["!devil-fruit:suppressed"]
+      }
+    ]
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "effectType": "wolf-hybrid-form"
+    }
+  }
+}

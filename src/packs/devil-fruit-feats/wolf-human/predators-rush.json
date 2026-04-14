@@ -1,0 +1,31 @@
+{
+  "_id": "wolfpredatorrush01",
+  "_key": "!items!wolfpredatorrush01",
+  "name": "Predator's Rush",
+  "type": "feat",
+  "img": "icons/creatures/mammals/wolf-running-black.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[2 actions] Archetype, Concentrate</strong></p><p>You close the distance with terrifying speed and crash into your prey. Stride up to your Speed (this Stride does not trigger reactions), then make a Strike. If the Strike hits:</p><ul><li>Add <strong>2d6 extra damage</strong>.</li><li>Attempt to <strong>Trip</strong> the target as a free action (use your Athletics modifier). On a success, the target is knocked prone.</li></ul><p>If you are in Hybrid Form or Full Wolf Form when you use this ability, your Stride distance for this action increases by <strong>10 feet</strong>.</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "gm": ""
+    },
+    "rules": [],
+    "slug": "predators-rush",
+    "traits": {
+      "value": ["archetype", "concentrate"],
+      "rarity": "common"
+    },
+    "level": { "value": 12 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Wolf-Human Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 2 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "wolf-human"
+    }
+  }
+}

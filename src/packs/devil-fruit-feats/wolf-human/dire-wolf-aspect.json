@@ -1,0 +1,31 @@
+{
+  "_id": "wolfdirewolfasp001",
+  "_key": "!items!wolfdirewolfasp001",
+  "name": "Dire Wolf Aspect",
+  "type": "feat",
+  "img": "icons/creatures/mammals/wolf-teeth-glowing-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[2 actions] Archetype, Concentrate, Polymorph</strong></p><p>You manifest the full primal power of the ancient dire wolf. For <strong>1 minute</strong>, your wolf form is elevated beyond its natural limits:</p><ul><li>Your size becomes <strong>Huge</strong> (or Large, if not already in wolf form — apply Full Wolf Form effect first).</li><li>Your land Speed becomes at least <strong>80 feet</strong>.</li><li>You gain a <strong>+3 status bonus to all attack rolls and damage rolls</strong>.</li><li>You are <strong>immune to the Frightened condition</strong>.</li><li>At the start of each of your turns, all enemies within <strong>30 feet</strong> must attempt a Will save (your class DC) or become <strong>Frightened 1</strong> (or increase existing Frightened by 1).</li></ul><p>When Dire Wolf Aspect ends, you revert to your previous form (Hybrid or human). You cannot use Dire Wolf Aspect again until your next daily preparations.</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "gm": "<p>Dire Wolf Aspect is intentionally the pinnacle of Wolf-Human power. The Huge size should be applied manually on the token. The passive terror aura stacks powerfully with Alpha's Presence and Pack Tactics — a level 20 Wolf-Human is a serious area-denial threat. The daily recharge reflects its extreme power.</p>"
+    },
+    "rules": [],
+    "slug": "dire-wolf-aspect",
+    "traits": {
+      "value": ["archetype", "concentrate", "polymorph"],
+      "rarity": "common"
+    },
+    "level": { "value": 20 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Wolf-Human Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 2 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "wolf-human"
+    }
+  }
+}

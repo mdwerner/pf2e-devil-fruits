@@ -1,0 +1,40 @@
+{
+  "_id": "wolfalphaprsnce001",
+  "_key": "!items!wolfalphaprsnce001",
+  "name": "Alpha's Presence",
+  "type": "feat",
+  "img": "icons/magic/control/fear-fright-monster-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Archetype</strong></p><p>Your predatory nature radiates outward as a palpable aura of dominance. You gain the following permanent benefits while your Devil Fruit is not suppressed:</p><ul><li>Enemies within <strong>30 feet</strong> take a <strong>–1 status penalty to Will saves</strong>.</li><li>While you are in Hybrid Form or Full Wolf Form, your Strikes deal <strong>additional damage equal to the target's current Frightened value</strong> (e.g., Frightened 3 = +3 damage).</li><li>When a creature critically fails a save against one of your fear abilities (Savage Howl, Howl of Dread), it is also <strong>Sickened 1</strong> from pure terror.</li></ul>",
+      "gm": "<p>The Will save penalty aura is a strong persistent debuff — it applies even in human form, making the character a natural battlefield controller. The Frightened-damage scaling rewards setting up fear conditions with Savage Howl before attacking.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "will",
+        "type": "status",
+        "value": -1,
+        "label": "Alpha's Presence",
+        "predicate": ["!devil-fruit:suppressed", "target:condition:within-aura-30ft"]
+      }
+    ],
+    "slug": "alphas-presence",
+    "traits": {
+      "value": ["archetype", "aura", "emotion", "mental"],
+      "rarity": "common"
+    },
+    "level": { "value": 16 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Wolf-Human Dedication" }]
+    },
+    "actionType": { "value": "passive" },
+    "actions": { "value": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "wolf-human"
+    }
+  }
+}

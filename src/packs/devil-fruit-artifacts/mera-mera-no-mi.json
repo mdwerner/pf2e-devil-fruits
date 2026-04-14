@@ -6,103 +6,210 @@
   "img": "icons/consumables/fruit/orange.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Archetype Artifact — Devil Fruit (Logia)</strong></p><p>A bright orange fruit shaped like a stylized flame, its surface divided into flame-petal segments. Consuming the Mera Mera no Mi transforms your body into living fire, granting the <strong>Flame-Human archetype</strong> and the power of Logia Intangibility.</p><hr/><p><strong>Flame-Human Archetype Progression</strong></p><p>Upon consuming this fruit, you immediately gain the <em>Flame-Human Dedication</em> feat. Additional archetype feats are automatically unlocked as you level up:</p><ul><li><strong>Level 4:</strong> Hiken (Fire Fist) — Compressed fire-fist ranged strike at 30 feet</li><li><strong>Level 6:</strong> Hibashira (Fire Pillar) — Erupting fire column, 10-foot burst</li><li><strong>Level 8:</strong> Hidaruma (Firethrower) — Continuous flame stream in a 30-foot line</li><li><strong>Level 10:</strong> Flame Barrier — Persistent fire zone, difficult terrain + damage</li><li><strong>Level 12:</strong> Fire Form — Full flame dissolution, move through spaces</li><li><strong>Level 14:</strong> Flame Commandment — Massive 20-foot burst detonation</li><li><strong>Level 16:</strong> Inshi (Fire Emperor's Slash) — 60-foot fire blade wave</li><li><strong>Level 18:</strong> Empyrean Fire — Full physical immunity, blazing aura</li><li><strong>Level 20:</strong> Dai Enkai: Entei — Miniature sun, 30-foot burst devastation</li></ul><hr/><p><strong>Inherent Weakness:</strong> You have weakness 5 to water damage. This weakness is never suppressed.</p><p><strong>Trait: Sea-Bound.</strong> While submerged in standing seawater (at least waist-deep) or in contact with Seastone, you are Slowed 1, Clumsy 1, and cannot use any actions or passives granted by your Devil Fruit archetype. If fully submerged, you are Stunned until removed from the water.</p><p><em>A creature may only ever consume one Devil Fruit. Consuming a second is instantly fatal.</em></p>",
-      "gm": "<p>The Mera Mera no Mi is a Logia-type fruit — the most powerful class. The Logia Intangibility (physical immunity, except magical) and water weakness are defined in the Flame-Human Dedication feat. The weakness is NOT gated on !devil-fruit:suppressed by design. The GrantItem rules here auto-grant the progression feats from the Devil Fruit Feats compendium pack using level predicates ({\"gte\": [\"actor:level\", N]}).</p>"
+      "value": "<p><strong>Archetype Artifact \u00e2\u20ac\u201d Devil Fruit (Logia)</strong></p><p>A bright orange fruit shaped like a stylized flame, its surface divided into flame-petal segments. Consuming the Mera Mera no Mi transforms your body into living fire, granting the <strong>Flame-Human archetype</strong> and the power of Logia Intangibility.</p><hr/><p><strong>Flame-Human Archetype Progression</strong></p><p>Upon consuming this fruit, you immediately gain the <em>Flame-Human Dedication</em> feat. Additional archetype feats are automatically unlocked as you level up:</p><ul><li><strong>Level 4:</strong> Hiken (Fire Fist) \u00e2\u20ac\u201d Compressed fire-fist ranged strike at 30 feet</li><li><strong>Level 6:</strong> Hibashira (Fire Pillar) \u00e2\u20ac\u201d Erupting fire column, 10-foot burst</li><li><strong>Level 8:</strong> Hidaruma (Firethrower) \u00e2\u20ac\u201d Continuous flame stream in a 30-foot line</li><li><strong>Level 10:</strong> Flame Barrier \u00e2\u20ac\u201d Persistent fire zone, difficult terrain + damage</li><li><strong>Level 12:</strong> Fire Form \u00e2\u20ac\u201d Full flame dissolution, move through spaces</li><li><strong>Level 14:</strong> Flame Commandment \u00e2\u20ac\u201d Massive 20-foot burst detonation</li><li><strong>Level 16:</strong> Inshi (Fire Emperor's Slash) \u00e2\u20ac\u201d 60-foot fire blade wave</li><li><strong>Level 18:</strong> Empyrean Fire \u00e2\u20ac\u201d Full physical immunity, blazing aura</li><li><strong>Level 20:</strong> Dai Enkai: Entei \u00e2\u20ac\u201d Miniature sun, 30-foot burst devastation</li></ul><hr/><p><strong>Inherent Weakness:</strong> You have weakness 5 to water damage. This weakness is never suppressed.</p><p><strong>Trait: Sea-Bound.</strong> While submerged in standing seawater (at least waist-deep) or in contact with Seastone, you are Slowed 1, Clumsy 1, and cannot use any actions or passives granted by your Devil Fruit archetype. If fully submerged, you are Stunned until removed from the water.</p><p><em>A creature may only ever consume one Devil Fruit. Consuming a second is instantly fatal.</em></p>",
+      "gm": "<p>The Mera Mera no Mi is a Logia-type fruit \u00e2\u20ac\u201d the most powerful class. The Logia Intangibility (physical immunity, except magical) and water weakness are defined in the Flame-Human Dedication feat. The weakness is NOT gated on !devil-fruit:suppressed by design. The GrantItem rules here auto-grant the progression feats from the Devil Fruit Feats compendium pack using level predicates ({\"gte\": [\"actor:level\", N]}).</p>"
     },
     "slug": "devil-fruit-mera-mera-no-mi",
     "traits": {
-      "value": ["sea-bound", "artifact", "cursed", "invested", "magical", "fire", "arcane"],
+      "value": [
+        "sea-bound",
+        "artifact",
+        "cursed",
+        "invested",
+        "magical",
+        "fire",
+        "arcane",
+        "logia"
+      ],
       "rarity": "unique"
     },
-    "level": { "value": 14 },
-    "price": { "value": { "gp": 0 } },
+    "level": {
+      "value": 14
+    },
+    "price": {
+      "value": {
+        "gp": 0
+      }
+    },
     "quantity": 1,
-    "bulk": { "value": "L" },
+    "bulk": {
+      "value": "L"
+    },
     "equipped": {
       "carryType": "held",
       "inSlot": false,
       "invested": null
     },
-    "usage": { "value": "held-in-one-hand" },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
     "rules": [
       {
         "key": "ActorTraits",
-        "add": ["sea-bound"]
+        "add": [
+          "sea-bound"
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.flamehumandedic01",
         "flag": "flameHumanDedication",
-        "onDeleteActions": { "grantee": "restrict" }
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.hikenfist0000001",
         "flag": "hikenGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 4]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              4
+            ]
+          }
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.hibashirapillar1",
         "flag": "hibashiraGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 6]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              6
+            ]
+          }
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.hidarumaflame001",
         "flag": "hidarumaGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 8]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              8
+            ]
+          }
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.flamebarrier0001",
         "flag": "flameBarrierGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 10]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              10
+            ]
+          }
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.fireformlogia001",
         "flag": "fireFormGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 12]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              12
+            ]
+          }
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.flamecmnd0000001",
         "flag": "flameCommandmentGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 14]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              14
+            ]
+          }
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.inshifirecut0001",
         "flag": "inshiGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 16]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              16
+            ]
+          }
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.empyreanfire0001",
         "flag": "empyreanFireGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 18]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              18
+            ]
+          }
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.daienkaientei001",
         "flag": "enteiGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 20]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              20
+            ]
+          }
+        ]
       }
     ],
     "category": "held",
     "group": null,
     "baseItem": null,
-    "material": { "type": null, "grade": null }
+    "material": {
+      "type": null,
+      "grade": null
+    }
   },
   "flags": {
     "pf2e-devil-fruit-artifacts": {

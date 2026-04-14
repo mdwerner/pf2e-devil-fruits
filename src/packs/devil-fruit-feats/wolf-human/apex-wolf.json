@@ -1,0 +1,41 @@
+{
+  "_id": "wolfapexwolf000001",
+  "_key": "!items!wolfapexwolf000001",
+  "name": "Apex Wolf",
+  "type": "feat",
+  "img": "icons/creatures/mammals/wolf-teeth-snarl-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Archetype</strong></p><p>Your wolf nature reaches its physical pinnacle. You gain the following permanent benefits (suppressed while Sea-Bound):</p><ul><li><strong>While in Hybrid or Full Wolf Form:</strong> You gain <strong>resistance to physical damage equal to your level (minimum 5)</strong>, as your hide becomes supernaturally tough.</li><li>Your <strong>Hybrid Form</strong> Speed bonus increases from +10 to <strong>+20 feet</strong>. Your <strong>Full Wolf Form</strong> land Speed becomes at least <strong>60 feet</strong>.</li><li>Your bite Strikes gain the <strong>brutal</strong> and <strong>deadly d12</strong> traits.</li></ul>",
+      "gm": "<p>The physical resistance is mechanically enforced via the Resistance rule element predicated on wolf-human:hybrid-form OR wolf-human:beast-form (set by the effect items). The speed upgrades are described in text — manually update the Wolf: Hybrid Form and Wolf: Full Beast Form effects when this feat is gained, or apply the bonus as an additional effect.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": "physical",
+        "value": "max(5, @actor.level)",
+        "predicate": [
+          "!devil-fruit:suppressed",
+          { "or": ["wolf-human:hybrid-form", "wolf-human:beast-form"] }
+        ]
+      }
+    ],
+    "slug": "apex-wolf",
+    "traits": {
+      "value": ["archetype"],
+      "rarity": "common"
+    },
+    "level": { "value": 18 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Wolf-Human Dedication" }]
+    },
+    "actionType": { "value": "passive" },
+    "actions": { "value": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "wolf-human"
+    }
+  }
+}

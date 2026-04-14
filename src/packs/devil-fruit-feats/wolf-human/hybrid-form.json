@@ -1,0 +1,31 @@
+{
+  "_id": "wolfhybridform0001",
+  "_key": "!items!wolfhybridform0001",
+  "name": "Hybrid Form",
+  "type": "feat",
+  "img": "icons/creatures/mammals/wolf-shadow-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[1 action] Archetype, Concentrate, Morph</strong></p><p>You partially transform, blending wolf and human into a powerful fighting form. Apply the @UUID[Compendium.pf2e-devil-fruit-artifacts.devil-fruit-effects.Item.wolfhybrideffect1]{Wolf: Hybrid Form} effect to yourself. Remove it to revert to human form.</p><p>While in Hybrid Form:</p><ul><li>Your Speed increases by <strong>10 feet</strong>.</li><li>You gain a <strong>+2 status bonus to Athletics and Perception</strong>.</li><li>Your unarmed Strikes become <strong>Wolf Bite</strong> (1d10 piercing, trip, grapple) and <strong>Wolf Claws</strong> (1d6 slashing, agile, versatile P).</li><li>Your unarmed Strikes are treated as <strong>magical</strong> for overcoming resistances and immunities.</li></ul><p>You can maintain Hybrid Form indefinitely. Activating Full Wolf Form automatically ends Hybrid Form (remove this effect and apply the beast form effect instead).</p><p><em>Suppressed while Sea-Bound — remove this effect if you become Sea-Bound.</em></p>",
+      "gm": "<p>The mechanical bonuses (speed, Athletics, Perception) are delivered by the Wolf: Hybrid Form effect item, which also sets the wolf-human:hybrid-form roll option used by Apex Wolf's physical resistance.</p>"
+    },
+    "rules": [],
+    "slug": "hybrid-form",
+    "traits": {
+      "value": ["archetype", "concentrate", "morph"],
+      "rarity": "common"
+    },
+    "level": { "value": 4 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Wolf-Human Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 1 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "wolf-human"
+    }
+  }
+}

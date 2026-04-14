@@ -6,103 +6,209 @@
   "img": "icons/consumables/fruit/apple-red.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Archetype Artifact — Devil Fruit (Paramecia)</strong></p><p>A mysterious fruit marked with a spiral pattern of bone-white and deep crimson. Consuming the Yomi Yomi no Mi bonds a second soul to your body, granting the <strong>Revive-Revive archetype</strong> and a permanent connection to the realm of death.</p><hr/><p><strong>Revive-Revive Archetype Progression</strong></p><p>Upon consuming this fruit, you immediately gain the <em>Revive-Revive Dedication</em> feat. Additional archetype feats are automatically unlocked as you level up:</p><ul><li><strong>Level 4:</strong> Soul Chill — Melee strike with underworld cold + negative damage</li><li><strong>Level 6:</strong> Nemuriuta (Sleep Song) — Haunting melody forces Will saves or sleep</li><li><strong>Level 8:</strong> Soul Solid — Passive: +2d6 cold damage on all melee strikes, magical</li><li><strong>Level 10:</strong> Underworld Walk — Briefly phase through objects and creatures</li><li><strong>Level 12:</strong> Freezing Soul — Cold wave burst, Fortitude save or Slowed</li><li><strong>Level 14:</strong> Soul Separation — Fully separate your soul as incorporeal spirit</li><li><strong>Level 16:</strong> Underworld Frost — 30-foot burst, massive cold + negative damage</li><li><strong>Level 18:</strong> Death Aria — Death Cheat twice per day, immunity to death and fear</li><li><strong>Level 20:</strong> Soul King's Concert — 60-foot Will save or Paralyzed/Dominated</li></ul><hr/><p><strong>Trait: Sea-Bound.</strong> While submerged in standing seawater (at least waist-deep) or in contact with Seastone, you are Slowed 1, Clumsy 1, and cannot use any actions or passives granted by your Devil Fruit archetype. If fully submerged, you are Stunned until removed from the water.</p><p><em>A creature may only ever consume one Devil Fruit. Consuming a second is instantly fatal.</em></p>",
+      "value": "<p><strong>Archetype Artifact \u00e2\u20ac\u201d Devil Fruit (Paramecia)</strong></p><p>A mysterious fruit marked with a spiral pattern of bone-white and deep crimson. Consuming the Yomi Yomi no Mi bonds a second soul to your body, granting the <strong>Revive-Revive archetype</strong> and a permanent connection to the realm of death.</p><hr/><p><strong>Revive-Revive Archetype Progression</strong></p><p>Upon consuming this fruit, you immediately gain the <em>Revive-Revive Dedication</em> feat. Additional archetype feats are automatically unlocked as you level up:</p><ul><li><strong>Level 4:</strong> Soul Chill \u00e2\u20ac\u201d Melee strike with underworld cold + negative damage</li><li><strong>Level 6:</strong> Nemuriuta (Sleep Song) \u00e2\u20ac\u201d Haunting melody forces Will saves or sleep</li><li><strong>Level 8:</strong> Soul Solid \u00e2\u20ac\u201d Passive: +2d6 cold damage on all melee strikes, magical</li><li><strong>Level 10:</strong> Underworld Walk \u00e2\u20ac\u201d Briefly phase through objects and creatures</li><li><strong>Level 12:</strong> Freezing Soul \u00e2\u20ac\u201d Cold wave burst, Fortitude save or Slowed</li><li><strong>Level 14:</strong> Soul Separation \u00e2\u20ac\u201d Fully separate your soul as incorporeal spirit</li><li><strong>Level 16:</strong> Underworld Frost \u00e2\u20ac\u201d 30-foot burst, massive cold + negative damage</li><li><strong>Level 18:</strong> Death Aria \u00e2\u20ac\u201d Death Cheat twice per day, immunity to death and fear</li><li><strong>Level 20:</strong> Soul King's Concert \u00e2\u20ac\u201d 60-foot Will save or Paralyzed/Dominated</li></ul><hr/><p><strong>Trait: Sea-Bound.</strong> While submerged in standing seawater (at least waist-deep) or in contact with Seastone, you are Slowed 1, Clumsy 1, and cannot use any actions or passives granted by your Devil Fruit archetype. If fully submerged, you are Stunned until removed from the water.</p><p><em>A creature may only ever consume one Devil Fruit. Consuming a second is instantly fatal.</em></p>",
       "gm": "<p>The Yomi Yomi no Mi is classified as Paramecia in this module. The Death Cheat mechanic in the dedication feat is a narrative once-per-day ability tracked manually. The GrantItem rules auto-grant progression feats from the Devil Fruit Feats compendium pack using level predicates ({\"gte\": [\"actor:level\", N]}).</p>"
     },
     "slug": "devil-fruit-yomi-yomi-no-mi",
     "traits": {
-      "value": ["sea-bound", "artifact", "cursed", "invested", "magical", "occult"],
+      "value": [
+        "sea-bound",
+        "artifact",
+        "cursed",
+        "invested",
+        "magical",
+        "occult",
+        "paramecia"
+      ],
       "rarity": "unique"
     },
-    "level": { "value": 10 },
-    "price": { "value": { "gp": 0 } },
+    "level": {
+      "value": 10
+    },
+    "price": {
+      "value": {
+        "gp": 0
+      }
+    },
     "quantity": 1,
-    "bulk": { "value": "L" },
+    "bulk": {
+      "value": "L"
+    },
     "equipped": {
       "carryType": "held",
       "inSlot": false,
       "invested": null
     },
-    "usage": { "value": "held-in-one-hand" },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
     "rules": [
       {
         "key": "ActorTraits",
-        "add": ["sea-bound"]
+        "add": [
+          "sea-bound"
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.revivereviveded1",
         "flag": "reviveReviveDedication",
-        "onDeleteActions": { "grantee": "restrict" }
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.soulchill0000001",
         "flag": "soulChillGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 4]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              4
+            ]
+          }
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.nemuriutasong001",
         "flag": "nemuriutaGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 6]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              6
+            ]
+          }
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.soulsolid0000001",
         "flag": "soulSolidGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 8]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              8
+            ]
+          }
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.underworldwalk01",
         "flag": "underworldWalkGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 10]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              10
+            ]
+          }
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.freezingsoul0001",
         "flag": "freezingSoulGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 12]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              12
+            ]
+          }
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.soulseparation01",
         "flag": "soulSeparationGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 14]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              14
+            ]
+          }
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.underwrlfrost001",
         "flag": "underworldFrostGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 16]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              16
+            ]
+          }
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.deatharia0000001",
         "flag": "deathAriaGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 18]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              18
+            ]
+          }
+        ]
       },
       {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.soulkingconcrt01",
         "flag": "soulKingGrant",
-        "onDeleteActions": { "grantee": "restrict" },
-        "predicate": [{"gte": ["actor:level", 20]}]
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              20
+            ]
+          }
+        ]
       }
     ],
     "category": "held",
     "group": null,
     "baseItem": null,
-    "material": { "type": null, "grade": null }
+    "material": {
+      "type": null,
+      "grade": null
+    }
   },
   "flags": {
     "pf2e-devil-fruit-artifacts": {

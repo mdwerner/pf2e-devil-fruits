@@ -1,0 +1,40 @@
+{
+  "_id": "wolfpacktactics001",
+  "_key": "!items!wolfpacktactics001",
+  "name": "Pack Tactics",
+  "type": "feat",
+  "img": "icons/skills/social/intimidation-impressing.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Archetype</strong></p><p>You hunt with instinctive coordination, exploiting openings that your allies create. You gain the following benefits while your Devil Fruit is not suppressed:</p><ul><li>You gain a <strong>+2 circumstance bonus to attack rolls</strong> against creatures that are within reach of at least one of your allies.</li><li>When you critically hit a creature that is Frightened, it must succeed at a Fortitude save (your class DC) or become <strong>Stunned 1</strong>.</li></ul>",
+      "gm": "<p>The +2 circumstance bonus is stronger than flanking (+2 circumstance) but applies even without flanking geometry — appropriate for a high-level Zoan feat. The Stunned-on-crit-against-Frightened synergises with Savage Howl and Howl of Dread.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "attack",
+        "type": "circumstance",
+        "value": 2,
+        "label": "Pack Tactics",
+        "predicate": ["!devil-fruit:suppressed", "allies-within-reach"]
+      }
+    ],
+    "slug": "pack-tactics",
+    "traits": {
+      "value": ["archetype"],
+      "rarity": "common"
+    },
+    "level": { "value": 10 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Wolf-Human Dedication" }]
+    },
+    "actionType": { "value": "passive" },
+    "actions": { "value": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "wolf-human"
+    }
+  }
+}

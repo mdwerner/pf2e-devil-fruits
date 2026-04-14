@@ -1,0 +1,31 @@
+{
+  "_id": "wolffullbeastfrm01",
+  "_key": "!items!wolffullbeastfrm01",
+  "name": "Full Wolf Form",
+  "type": "feat",
+  "img": "icons/creatures/mammals/wolf-teeth-glowing-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[1 action] Archetype, Concentrate, Polymorph</strong></p><p>You fully transform into a massive, powerful wolf. Remove any active @UUID[Compendium.pf2e-devil-fruit-artifacts.devil-fruit-effects.Item.wolfhybrideffect1]{Wolf: Hybrid Form} effect, then apply the @UUID[Compendium.pf2e-devil-fruit-artifacts.devil-fruit-effects.Item.wolfbeastformeff1]{Wolf: Full Beast Form} effect to yourself. Remove it to revert to human form.</p><p>While in Full Wolf Form:</p><ul><li>Your land Speed becomes at least <strong>40 feet</strong>.</li><li>You gain <strong>imprecise scent 30 feet</strong> and a <strong>+4 status bonus to Perception and Survival</strong> checks to Track.</li><li>Your size becomes <strong>Large</strong> (or you gain Powerful Build if already Large or larger).</li><li>Your unarmed Strikes become <strong>Dire Bite</strong> (2d8 piercing, trip, deadly d10) and <strong>Claws</strong> (1d8 slashing, agile).</li></ul><p>While in this form, you <strong>cannot speak, manipulate objects, or use abilities requiring hands</strong>. You can communicate basic intent to allies through growls and body language.</p><p>You can maintain Full Wolf Form indefinitely.</p><p><em>Suppressed while Sea-Bound — remove this effect if you become Sea-Bound.</em></p>",
+      "gm": "<p>Full Wolf Form uses the wolf-human:beast-form roll option, which gates Apex Wolf's physical resistance. Large size should be handled manually on the token. If the character already has higher than 40 ft speed, they keep it — the BaseSpeed RE on the effect uses the higher value.</p>"
+    },
+    "rules": [],
+    "slug": "full-wolf-form",
+    "traits": {
+      "value": ["archetype", "concentrate", "polymorph"],
+      "rarity": "common"
+    },
+    "level": { "value": 8 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Wolf-Human Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 1 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "wolf-human"
+    }
+  }
+}

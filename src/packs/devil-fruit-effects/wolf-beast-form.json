@@ -1,0 +1,54 @@
+{
+  "_id": "wolfbeastformeff1",
+  "_key": "!items!wolfbeastformeff1",
+  "name": "Wolf: Full Beast Form",
+  "type": "effect",
+  "img": "icons/creatures/mammals/wolf-shadow-black.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are fully transformed into a massive wolf. You gain the following while this effect is active and your Devil Fruit is not suppressed:</p><ul><li>Land Speed becomes at least <strong>40 feet</strong></li><li>+4 status bonus to Perception and Survival (Track)</li><li>Imprecise scent 30 feet</li><li>Unarmed Strikes become Dire Bite (2d8 piercing, trip, deadly d10) and Claws (1d8 slashing, agile)</li><li>Size becomes Large (or Powerful Build if already Large+)</li></ul><p>You cannot speak, manipulate objects, or use abilities requiring hands while this effect is active.</p><p>Remove this effect to revert to human form.</p>",
+      "gm": "<p>This effect sets the wolf-human:beast-form roll option, which gates the Apex Wolf feat's physical resistance. The speed is set via BaseSpeed (land-speed = 40) so characters with higher base speed keep their speed.</p>"
+    },
+    "slug": "wolf-full-beast-form",
+    "traits": {
+      "value": ["polymorph"],
+      "rarity": "common"
+    },
+    "level": { "value": 0 },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "sustained": false,
+      "expiry": null
+    },
+    "tokenIcon": { "show": true },
+    "badge": null,
+    "rules": [
+      {
+        "key": "RollOption",
+        "domain": "all",
+        "option": "wolf-human:beast-form",
+        "value": true
+      },
+      {
+        "key": "BaseSpeed",
+        "selector": "land-speed",
+        "value": 40,
+        "predicate": ["!devil-fruit:suppressed"]
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "perception",
+        "type": "status",
+        "value": 4,
+        "label": "Wolf Full Beast Form",
+        "predicate": ["!devil-fruit:suppressed"]
+      }
+    ]
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "effectType": "wolf-beast-form"
+    }
+  }
+}

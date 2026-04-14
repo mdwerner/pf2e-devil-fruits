@@ -1,0 +1,31 @@
+{
+  "_id": "wolfhowlofdread001",
+  "_key": "!items!wolfhowlofdread001",
+  "name": "Howl of Dread",
+  "type": "feat",
+  "img": "icons/magic/sonic/explosion-shock-wave-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[2 actions] Archetype, Auditory, Concentrate, Emotion, Fear, Mental</strong></p><p><strong>Requirement:</strong> You are in Hybrid Form or Full Wolf Form.</p><p>You release a legendary howl that resonates with primal terror. All creatures within <strong>120 feet</strong> must attempt a Will save (your class DC). Creatures immune to fear are unaffected.</p><table><tr><th>Result</th><th>Effect</th></tr><tr><td><strong>Critical Success</strong></td><td>No effect</td></tr><tr><td><strong>Success</strong></td><td>Frightened 1</td></tr><tr><td><strong>Failure</strong></td><td>Frightened 3 and Fleeing for 1 round</td></tr><tr><td><strong>Critical Failure</strong></td><td>Frightened 4 and Fleeing for 1 minute; the creature cannot reduce its Frightened value below 2 until the encounter ends</td></tr></table><p>You can use Howl of Dread <strong>once per combat encounter</strong>.</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "gm": "<p>Howl of Dread requires wolf form. The 'cannot reduce Frightened below 2' on a critical failure is a strong debuff — it synergizes with Pack Tactics and Alpha's Presence. The once-per-encounter limit keeps it from trivializing combat.</p>"
+    },
+    "rules": [],
+    "slug": "howl-of-dread",
+    "traits": {
+      "value": ["archetype", "auditory", "concentrate", "emotion", "fear", "mental"],
+      "rarity": "common"
+    },
+    "level": { "value": 14 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Wolf-Human Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 2 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "wolf-human"
+    }
+  }
+}

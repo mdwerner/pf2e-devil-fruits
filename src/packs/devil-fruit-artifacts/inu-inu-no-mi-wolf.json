@@ -1,0 +1,220 @@
+{
+  "_id": "devilfruitwolf0001",
+  "_key": "!items!devilfruitwolf0001",
+  "name": "Devil Fruit: Inu Inu no Mi (Model: Wolf)",
+  "type": "equipment",
+  "img": "icons/creatures/mammals/wolf-black.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Archetype Artifact \u00e2\u20ac\u201d Devil Fruit (Zoan)</strong></p><p>A dark, shaggy-furred fruit with a spiral pattern resembling a wolf's eye. Consuming the Inu Inu no Mi, Model: Wolf permanently binds wolf nature to your soul, granting the <strong>Wolf-Human archetype</strong> and the ability to transform between three forms.</p><hr/><p><strong>Three Forms</strong></p><ul><li><strong>Human Form</strong> \u00e2\u20ac\u201d Your base form. You retain your normal statistics plus the passive benefits of the dedication feat.</li><li><strong>Hybrid Form</strong> (unlocked at level 4) \u00e2\u20ac\u201d A wolf-human hybrid: +10 Speed, enhanced Athletics and Perception, powerful bite and claw attacks. Apply the <em>Wolf: Hybrid Form</em> effect from the Devil Fruit Effects compendium.</li><li><strong>Full Wolf Form</strong> (unlocked at level 8) \u00e2\u20ac\u201d A massive wolf: Speed 40+, Large size, dire bite attacks, imprecise scent. Apply the <em>Wolf: Full Beast Form</em> effect. Cannot use hands or speak in this form.</li></ul><hr/><p><strong>Wolf-Human Archetype Progression</strong></p><p>Upon consuming this fruit, you immediately gain the <em>Wolf-Human Dedication</em> feat. Additional archetype feats are automatically unlocked as you level up:</p><ul><li><strong>Level 4:</strong> Hybrid Form \u00e2\u20ac\u201d Partial transformation into wolf-human hybrid</li><li><strong>Level 6:</strong> Savage Howl \u00e2\u20ac\u201d 60-foot fear howl, Will save</li><li><strong>Level 8:</strong> Full Wolf Form \u00e2\u20ac\u201d Complete wolf transformation</li><li><strong>Level 10:</strong> Pack Tactics \u00e2\u20ac\u201d Attack bonus when allies threaten the same target</li><li><strong>Level 12:</strong> Predator's Rush \u00e2\u20ac\u201d Stride + Strike with free Trip attempt</li><li><strong>Level 14:</strong> Howl of Dread \u00e2\u20ac\u201d 120-foot legendary howl, requires wolf form</li><li><strong>Level 16:</strong> Alpha's Presence \u00e2\u20ac\u201d Will penalty aura; bonus damage vs. Frightened</li><li><strong>Level 18:</strong> Apex Wolf \u00e2\u20ac\u201d Physical resistance in wolf forms; speed upgrades</li><li><strong>Level 20:</strong> Dire Wolf Aspect \u00e2\u20ac\u201d Huge dire wolf ultimate form, terror aura</li></ul><hr/><p><strong>Trait: Sea-Bound.</strong> While submerged in standing seawater (at least waist-deep) or in contact with Seastone, you are Slowed 1, Clumsy 1, and cannot use any actions or passives granted by your Devil Fruit archetype. If fully submerged, you are Stunned until removed from the water. Remove any active wolf form effects when Sea-Bound.</p><p><em>A creature may only ever consume one Devil Fruit. Consuming a second is instantly fatal.</em></p>",
+      "gm": "<p>This Zoan fruit uses the Devil Fruit Effects compendium pack for form tracking. When a player activates Hybrid Form or Full Wolf Form, they drag the appropriate effect from that compendium onto their character. The effects set roll options (wolf-human:hybrid-form / wolf-human:beast-form) that gate Apex Wolf's physical resistance automatically. The GrantItem rules auto-grant progression feats from the Devil Fruit Feats pack using level predicates.</p>"
+    },
+    "slug": "devil-fruit-inu-inu-no-mi-wolf",
+    "traits": {
+      "value": [
+        "sea-bound",
+        "artifact",
+        "cursed",
+        "invested",
+        "magical",
+        "primal",
+        "zoan"
+      ],
+      "rarity": "unique"
+    },
+    "level": {
+      "value": 10
+    },
+    "price": {
+      "value": {
+        "gp": 0
+      }
+    },
+    "quantity": 1,
+    "bulk": {
+      "value": "L"
+    },
+    "equipped": {
+      "carryType": "held",
+      "inSlot": false,
+      "invested": null
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "sea-bound"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.wolfhumandedic0001",
+        "flag": "wolfHumanDedication",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.wolfhybridform0001",
+        "flag": "hybridFormGrant",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.wolfsavagehowl0001",
+        "flag": "savageHowlGrant",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.wolffullbeastfrm01",
+        "flag": "fullWolfFormGrant",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.wolfpacktactics001",
+        "flag": "packTacticsGrant",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.wolfpredatorrush01",
+        "flag": "predatorRushGrant",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.wolfhowlofdread001",
+        "flag": "howlOfDreadGrant",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.wolfalphaprsnce001",
+        "flag": "alphaPresenceGrant",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.wolfapexwolf000001",
+        "flag": "apexWolfGrant",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.wolfdirewolfasp001",
+        "flag": "direWolfAspectGrant",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          {
+            "gte": [
+              "actor:level",
+              20
+            ]
+          }
+        ]
+      }
+    ],
+    "category": "held",
+    "group": null,
+    "baseItem": null,
+    "material": {
+      "type": null,
+      "grade": null
+    }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "artifactType": "devil-fruit",
+      "archetypeSlug": "wolf-human",
+      "fruitType": "zoan"
+    }
+  }
+}

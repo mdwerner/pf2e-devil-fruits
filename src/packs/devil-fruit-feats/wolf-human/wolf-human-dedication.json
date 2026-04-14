@@ -1,0 +1,44 @@
+{
+  "_id": "wolfhumandedic0001",
+  "_key": "!items!wolfhumandedic0001",
+  "name": "Wolf-Human Dedication",
+  "type": "feat",
+  "img": "icons/creatures/mammals/wolf-black.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Archetype Dedication</strong></p><p>You have consumed the Inu Inu no Mi, Model: Wolf, bonding wolf nature to your soul and granting the <strong>Wolf-Human archetype</strong>. You gain the following benefits while your Devil Fruit is not suppressed:</p><ul><li>You gain <strong>low-light vision</strong>.</li><li>You gain a <strong>+1 circumstance bonus to Perception checks</strong> and to Survival checks to Track.</li><li>You gain <strong>resistance to poison damage equal to your level (minimum 5)</strong>.</li><li>Your unarmed bite Strikes gain the <strong>trip</strong> and <strong>grapple</strong> traits and deal piercing damage.</li></ul><p>All archetype benefits are suppressed while you are Sea-Bound.</p>",
+      "gm": ""
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": "poison",
+        "value": "max(5, @actor.level)",
+        "predicate": ["!devil-fruit:suppressed"]
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "perception",
+        "type": "circumstance",
+        "value": 1,
+        "label": "Wolf-Human Dedication",
+        "predicate": ["!devil-fruit:suppressed"]
+      }
+    ],
+    "slug": "wolf-human-dedication",
+    "traits": {
+      "value": ["archetype", "dedication"],
+      "rarity": "common"
+    },
+    "level": { "value": 1 },
+    "featType": { "value": "archetype" },
+    "prerequisites": { "value": [] },
+    "actionType": { "value": "passive" },
+    "actions": { "value": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "wolf-human"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_id": "wolfsavagehowl0001",
+  "_key": "!items!wolfsavagehowl0001",
+  "name": "Savage Howl",
+  "type": "feat",
+  "img": "icons/magic/sonic/wave-ring-teal-white.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[1 action] Archetype, Auditory, Concentrate, Emotion, Fear, Mental</strong></p><p>You loose a bone-chilling howl that shatters nerve and breaks morale. All creatures within <strong>60 feet</strong> must attempt a Will save (your class DC). Creatures immune to fear are unaffected.</p><table><tr><th>Result</th><th>Effect</th></tr><tr><td><strong>Critical Success</strong></td><td>No effect</td></tr><tr><td><strong>Success</strong></td><td>Frightened 1</td></tr><tr><td><strong>Failure</strong></td><td>Frightened 2</td></tr><tr><td><strong>Critical Failure</strong></td><td>Frightened 2 and Fleeing for 1 round</td></tr></table><p><em>Suppressed while Sea-Bound.</em></p>",
+      "gm": ""
+    },
+    "rules": [],
+    "slug": "savage-howl",
+    "traits": {
+      "value": ["archetype", "auditory", "concentrate", "emotion", "fear", "mental"],
+      "rarity": "common"
+    },
+    "level": { "value": 6 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Wolf-Human Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 1 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "wolf-human"
+    }
+  }
+}
