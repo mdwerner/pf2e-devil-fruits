@@ -6,7 +6,7 @@
   "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
   "system": {
     "description": {
-      "value": "<p><strong>[3 actions] Archetype, Concentrate, Fire</strong></p><p>You release a massive detonation of flame in all directions. All creatures in a <strong>20-foot burst</strong> centered on a point within 60 feet take <strong>6d6 fire damage</strong> (basic Reflex DC 10 + your level + highest mental modifier).</p><p><strong>Critical Failure:</strong> The target also gains <strong>persistent fire damage 2d6</strong> and any flammable objects in the area ignite.</p><p>You can use Flame Commandment <strong>once per combat encounter</strong>.</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "value": "<p><strong>[3 actions] Archetype, Concentrate, Fire</strong></p><p>You release a massive detonation of flame in all directions. All creatures in a <strong>20-foot burst</strong> centered on a point within 60 feet take <strong>6d6 fire damage</strong> (basic Reflex your class DC).</p><p><strong>Critical Failure:</strong> The target also gains <strong>persistent fire damage 2d6</strong> and any flammable objects in the area ignite.</p><p>You can use Flame Commandment <strong>once per combat encounter</strong>.</p><p><em>Suppressed while Sea-Bound.</em></p>",
       "gm": ""
     },
     "rules": [],

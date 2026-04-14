@@ -6,7 +6,7 @@
   "img": "icons/magic/fire/explosion-fireball-large-orange.webp",
   "system": {
     "description": {
-      "value": "<p><strong>[2 actions] Archetype, Concentrate, Fire</strong></p><p>You manifest a miniature sun — a sphere of pure, annihilating fire. Choose a point within 100 feet. All creatures in a <strong>30-foot burst</strong> take <strong>10d10 fire damage</strong> (basic Reflex DC 10 + your level + highest mental modifier).</p><p>The area becomes an <strong>inferno</strong> for 1 minute: difficult terrain, and any creature that enters the area or starts its turn within it takes <strong>3d8 fire damage</strong> (basic Reflex, same DC).</p><p>You can use Dai Enkai: Entei <strong>once per day</strong>.</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "value": "<p><strong>[2 actions] Archetype, Concentrate, Fire</strong></p><p>You manifest a miniature sun — a sphere of pure, annihilating fire. Choose a point within 100 feet. All creatures in a <strong>30-foot burst</strong> take <strong>10d10 fire damage</strong> (basic Reflex your class DC).</p><p>The area becomes an <strong>inferno</strong> for 1 minute: difficult terrain, and any creature that enters the area or starts its turn within it takes <strong>3d8 fire damage</strong> (basic Reflex, same DC).</p><p>You can use Dai Enkai: Entei <strong>once per day</strong>.</p><p><em>Suppressed while Sea-Bound.</em></p>",
       "gm": "<p>Dai Enkai: Entei is one of the most powerful area attacks in the game. The once-per-day limit is intentional. The persistent inferno area can reshape battlefield positioning significantly.</p>"
     },
     "rules": [],

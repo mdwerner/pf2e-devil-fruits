@@ -6,7 +6,7 @@
   "img": "icons/magic/ice/snowflake-ice-snow-white.webp",
   "system": {
     "description": {
-      "value": "<p><strong>[2 actions] Archetype, Cold, Concentrate, Occult</strong></p><p>You release a wave of underworld cold, chilling enemies to their very souls. All creatures within 20 feet must attempt a Fortitude save (DC 10 + your level + your Charisma modifier).</p><table><tr><th>Result</th><th>Effect</th></tr><tr><td><strong>Critical Success</strong></td><td>No effect</td></tr><tr><td><strong>Success</strong></td><td>Half damage (4d8 cold)</td></tr><tr><td><strong>Failure</strong></td><td>Full damage (4d8 cold) and Slowed 1 for 1 round</td></tr><tr><td><strong>Critical Failure</strong></td><td>Double damage (8d8 cold), Slowed 1 for 1 minute, and Drained 1</td></tr></table><p><em>Suppressed while Sea-Bound.</em></p>",
+      "value": "<p><strong>[2 actions] Archetype, Cold, Concentrate, Occult</strong></p><p>You release a wave of underworld cold, chilling enemies to their very souls. All creatures within 20 feet must attempt a Fortitude save (your class DC).</p><table><tr><th>Result</th><th>Effect</th></tr><tr><td><strong>Critical Success</strong></td><td>No effect</td></tr><tr><td><strong>Success</strong></td><td>Half damage (4d8 cold)</td></tr><tr><td><strong>Failure</strong></td><td>Full damage (4d8 cold) and Slowed 1 for 1 round</td></tr><tr><td><strong>Critical Failure</strong></td><td>Double damage (8d8 cold), Slowed 1 for 1 minute, and Drained 1</td></tr></table><p><em>Suppressed while Sea-Bound.</em></p>",
       "gm": ""
     },
     "rules": [],

@@ -6,7 +6,7 @@
   "img": "icons/magic/fire/flame-burning-campfire-orange-blue.webp",
   "system": {
     "description": {
-      "value": "<p><strong>[2 actions] Archetype, Concentrate, Fire</strong></p><p>You erupt a towering column of fire from a point within 30 feet. All creatures in a <strong>10-foot burst</strong> take <strong>3d6 fire damage</strong> (basic Reflex DC 10 + your level + your highest mental ability modifier). The ground in the burst is briefly superheated — until the start of your next turn, any creature that enters or starts its turn in that area takes <strong>1d6 fire damage</strong>.</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "value": "<p><strong>[2 actions] Archetype, Concentrate, Fire</strong></p><p>You erupt a towering column of fire from a point within 30 feet. All creatures in a <strong>10-foot burst</strong> take <strong>3d6 fire damage</strong> (basic Reflex your class DC). The ground in the burst is briefly superheated — until the start of your next turn, any creature that enters or starts its turn in that area takes <strong>1d6 fire damage</strong>.</p><p><em>Suppressed while Sea-Bound.</em></p>",
       "gm": ""
     },
     "rules": [],

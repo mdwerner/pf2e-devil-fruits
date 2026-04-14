@@ -6,7 +6,7 @@
   "img": "icons/magic/fire/flame-strike-orange-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><strong>[2 actions] Archetype, Concentrate, Fire</strong></p><p>You launch a curved blade of condensed fire that carves through entire ranks. All creatures in a <strong>60-foot line</strong> must attempt a Reflex save (DC 10 + your level + highest mental modifier).</p><table><tr><th>Result</th><th>Effect</th></tr><tr><td><strong>Critical Success</strong></td><td>No effect</td></tr><tr><td><strong>Success</strong></td><td>Half damage (4d10 fire)</td></tr><tr><td><strong>Failure</strong></td><td>Full damage (4d10 fire)</td></tr><tr><td><strong>Critical Failure</strong></td><td>Double damage (8d10 fire) + persistent fire damage 2d6</td></tr></table><p><em>Suppressed while Sea-Bound.</em></p>",
+      "value": "<p><strong>[2 actions] Archetype, Concentrate, Fire</strong></p><p>You launch a curved blade of condensed fire that carves through entire ranks. All creatures in a <strong>60-foot line</strong> must attempt a Reflex save (your class DC).</p><table><tr><th>Result</th><th>Effect</th></tr><tr><td><strong>Critical Success</strong></td><td>No effect</td></tr><tr><td><strong>Success</strong></td><td>Half damage (4d10 fire)</td></tr><tr><td><strong>Failure</strong></td><td>Full damage (4d10 fire)</td></tr><tr><td><strong>Critical Failure</strong></td><td>Double damage (8d10 fire) + persistent fire damage 2d6</td></tr></table><p><em>Suppressed while Sea-Bound.</em></p>",
       "gm": ""
     },
     "rules": [],
