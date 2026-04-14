@@ -1,0 +1,31 @@
+{
+  "_id": "hidarumaflame001",
+  "_key": "!items!hidarumaflame001",
+  "name": "Hidaruma (Firethrower)",
+  "type": "feat",
+  "img": "icons/magic/fire/flame-stream-yellow-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[1 action] Archetype, Concentrate, Fire</strong></p><p>You continuously exhale a torrent of superheated flame. All creatures in a <strong>30-foot line</strong> take <strong>3d8 fire damage</strong> (basic Reflex DC 10 + your level + your highest mental ability modifier).</p><p><strong>Failed Save:</strong> The target also gains <strong>persistent fire damage 1d6</strong>.</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "gm": ""
+    },
+    "rules": [],
+    "slug": "hidaruma-firethrower",
+    "traits": {
+      "value": ["archetype", "concentrate", "fire"],
+      "rarity": "common"
+    },
+    "level": { "value": 8 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Flame-Human Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 1 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "flame-human"
+    }
+  }
+}

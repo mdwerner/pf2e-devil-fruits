@@ -1,0 +1,31 @@
+{
+  "_id": "soulseparation01",
+  "_key": "!items!soulseparation01",
+  "name": "Soul Separation",
+  "type": "feat",
+  "img": "icons/magic/death/ghost-soul-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[1 action] Archetype, Concentrate, Occult</strong></p><p>Your soul fully departs your skeleton, leaving your body behind as an inanimate shell. For up to <strong>1 minute</strong>, your soul becomes an <strong>incorporeal spirit</strong>:</p><ul><li>Your soul can move up to <strong>60 feet from your body</strong> in any direction (including vertically).</li><li>As a spirit, you are <strong>immune to physical damage</strong> and <strong>invisible to creatures without darkvision or see invisible</strong>.</li><li>You can perceive normally and communicate telepathically with allies within 60 feet.</li><li>Your body remains inanimate but cannot be destroyed; it is merely broken at worst while your soul roams.</li></ul><p>You can return to your body as a free action. If your body is moved beyond 60 feet while you are separated, you are immediately forced back into it.</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "gm": ""
+    },
+    "rules": [],
+    "slug": "soul-separation",
+    "traits": {
+      "value": ["archetype", "concentrate", "occult"],
+      "rarity": "common"
+    },
+    "level": { "value": 14 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Revive-Revive Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 1 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "revive-revive"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_id": "fireformlogia001",
+  "_key": "!items!fireformlogia001",
+  "name": "Fire Form",
+  "type": "feat",
+  "img": "icons/magic/fire/flame-burning-figure-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[1 action] Archetype, Concentrate, Fire, Morph</strong></p><p>You fully dissolve your body into living fire. For <strong>1 minute</strong>, you gain:</p><ul><li>You can <strong>move through other creatures' spaces</strong> without triggering reactions. You can't end your movement inside an object or creature.</li><li>Your movement does <strong>not trigger Attacks of Opportunity</strong>.</li><li>You gain <strong>immunity to precision damage</strong>.</li><li>Any creature that <strong>ends its turn adjacent to you</strong> takes <strong>2d8 fire damage</strong> (no save).</li></ul><p>While in fire form, non-magical physical attacks still pass through you (from your dedication's Logia Intangibility).</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "gm": ""
+    },
+    "rules": [],
+    "slug": "fire-form",
+    "traits": {
+      "value": ["archetype", "concentrate", "fire", "morph"],
+      "rarity": "common"
+    },
+    "level": { "value": 12 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Flame-Human Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 1 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "flame-human"
+    }
+  }
+}

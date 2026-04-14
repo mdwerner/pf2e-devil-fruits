@@ -1,0 +1,38 @@
+{
+  "_id": "empyreanfire0001",
+  "_key": "!items!empyreanfire0001",
+  "name": "Empyrean Fire",
+  "type": "feat",
+  "img": "icons/magic/fire/flame-burning-creature-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Archetype</strong></p><p>Your flames burn at a celestial intensity that no physical force can overcome. You gain the following permanent benefits (suppressed while Sea-Bound):</p><ul><li>Your Logia Intangibility upgrades: you are now <strong>immune to all physical damage</strong>, including from magical sources.</li><li>Your fire damage <strong>ignores resistance</strong>.</li><li><strong>Blazing Aura:</strong> At the start of each of your turns, each creature adjacent to you takes <strong>1d8 fire damage</strong> (no save).</li></ul>",
+      "gm": "<p>The ImmunityData rule element here grants full physical immunity with no magical exception, superseding the dedication's immunity-with-exception. PF2E takes the more permissive immunity.</p>"
+    },
+    "rules": [
+      {
+        "key": "ImmunityData",
+        "type": ["physical"],
+        "predicate": ["!devil-fruit:suppressed"],
+        "label": "Empyrean Fire: Full Physical Immunity"
+      }
+    ],
+    "slug": "empyrean-fire",
+    "traits": {
+      "value": ["archetype", "fire"],
+      "rarity": "common"
+    },
+    "level": { "value": 18 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Flame-Human Dedication" }]
+    },
+    "actionType": { "value": "passive" },
+    "actions": { "value": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "flame-human"
+    }
+  }
+}

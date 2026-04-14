@@ -1,0 +1,31 @@
+{
+  "_id": "soulchill0000001",
+  "_key": "!items!soulchill0000001",
+  "name": "Soul Chill",
+  "type": "feat",
+  "img": "icons/magic/death/hand-skeletal-claw-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[1 action] Archetype, Concentrate, Cold, Occult</strong></p><p>You channel the cold of the underworld through your weapon or fist. Make a melee Strike. On a hit, add <strong>1d8 cold damage + 1d8 negative damage</strong> to the result. This extra damage affects creatures that would normally be immune to cold or negative damage from non-magical sources.</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "gm": ""
+    },
+    "rules": [],
+    "slug": "soul-chill",
+    "traits": {
+      "value": ["archetype", "concentrate", "cold", "occult"],
+      "rarity": "common"
+    },
+    "level": { "value": 4 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Revive-Revive Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 1 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "revive-revive"
+    }
+  }
+}

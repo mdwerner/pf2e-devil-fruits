@@ -1,0 +1,31 @@
+{
+  "_id": "nemuriutasong001",
+  "_key": "!items!nemuriutasong001",
+  "name": "Nemuriuta (Sleep Song)",
+  "type": "feat",
+  "img": "icons/magic/sonic/wave-music-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[2 actions] Archetype, Auditory, Concentrate, Incapacitation, Occult, Mental</strong></p><p>You hum a haunting melody from beyond the grave that lulls the living into sleep. All <strong>living creatures</strong> within 30 feet must attempt a Will save (DC 10 + your level + your Charisma modifier). Undead and constructs are unaffected.</p><table><tr><th>Result</th><th>Effect</th></tr><tr><td><strong>Critical Success</strong></td><td>No effect</td></tr><tr><td><strong>Success</strong></td><td>Stupefied 1 until the start of your next turn</td></tr><tr><td><strong>Failure</strong></td><td>Unconscious for 1 round (wakes if damaged)</td></tr><tr><td><strong>Critical Failure</strong></td><td>Unconscious for 1 minute (wakes if damaged; DC 15 Perception to wake normally)</td></tr></table><p><em>Suppressed while Sea-Bound.</em></p>",
+      "gm": ""
+    },
+    "rules": [],
+    "slug": "nemuriuta-sleep-song",
+    "traits": {
+      "value": ["archetype", "auditory", "concentrate", "incapacitation", "occult", "mental"],
+      "rarity": "common"
+    },
+    "level": { "value": 6 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Revive-Revive Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 2 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "revive-revive"
+    }
+  }
+}

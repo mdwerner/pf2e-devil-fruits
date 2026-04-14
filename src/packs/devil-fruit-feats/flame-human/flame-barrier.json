@@ -1,0 +1,31 @@
+{
+  "_id": "flamebarrier0001",
+  "_key": "!items!flamebarrier0001",
+  "name": "Flame Barrier",
+  "type": "feat",
+  "img": "icons/magic/fire/barrier-shield-flame-yellow-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[2 actions] Archetype, Concentrate, Fire</strong></p><p>You sculpt your flames into a persistent wall of fire. Choose a point within 60 feet. A <strong>10-foot burst</strong> centered on that point becomes a roaring flame barrier for <strong>1 minute</strong>:</p><ul><li>The area is <strong>difficult terrain</strong>.</li><li>Any creature that enters the area or starts its turn within it takes <strong>2d8 fire damage</strong> (basic Reflex DC 10 + your level + highest mental modifier).</li><li>Ranged attacks that pass through the area take a −2 circumstance penalty.</li></ul><p>You can dismiss the barrier as a free action.</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "gm": ""
+    },
+    "rules": [],
+    "slug": "flame-barrier",
+    "traits": {
+      "value": ["archetype", "concentrate", "fire"],
+      "rarity": "common"
+    },
+    "level": { "value": 10 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Flame-Human Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 2 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "flame-human"
+    }
+  }
+}

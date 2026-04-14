@@ -1,0 +1,39 @@
+{
+  "_id": "soulsolid0000001",
+  "_key": "!items!soulsolid0000001",
+  "name": "Soul Solid",
+  "type": "feat",
+  "img": "icons/weapons/swords/sword-guard-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Archetype, Occult</strong></p><p>You suffuse your melee Strikes with the cold energy of the underworld. All of your melee Strikes gain the following permanent benefits (suppressed while Sea-Bound):</p><ul><li>They deal an additional <strong>2d6 cold damage</strong>.</li><li>They are treated as <strong>magical</strong> for the purpose of overcoming resistances and immunities.</li><li>They can affect <strong>incorporeal creatures</strong> without the normal miss chance.</li></ul>",
+      "gm": ""
+    },
+    "rules": [
+      {
+        "key": "DamageDice",
+        "selector": "strike-damage",
+        "value": { "diceNumber": 2, "dieSize": "d6" },
+        "damageType": "cold",
+        "predicate": ["!devil-fruit:suppressed", "item:category:unarmed"]
+      }
+    ],
+    "slug": "soul-solid",
+    "traits": {
+      "value": ["archetype", "occult"],
+      "rarity": "common"
+    },
+    "level": { "value": 8 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Revive-Revive Dedication" }]
+    },
+    "actionType": { "value": "passive" },
+    "actions": { "value": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "revive-revive"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "_id": "flamehumandedic01",
+  "_key": "!items!flamehumandedic01",
+  "name": "Flame-Human Dedication",
+  "type": "feat",
+  "img": "icons/magic/fire/flame-burning-hand-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Archetype Dedication</strong></p><p>You have consumed the Mera Mera no Mi, transforming your body into living fire and granting you the <strong>Logia Intangibility</strong> of the Flame-Human archetype. You gain the following benefits while your Devil Fruit is not suppressed:</p><ul><li>You are <strong>immune to fire damage</strong>.</li><li><strong>Logia Intangibility:</strong> Non-magical physical attacks pass harmlessly through your flame-form. You gain immunity to physical damage, except from magical sources.</li><li>Your unarmed Strikes deal <strong>fire damage</strong>.</li></ul><p><strong>Inherent Weakness:</strong> You have <strong>weakness 5 to water damage</strong>. This weakness is never suppressed, even while Sea-Bound.</p><p>All other archetype benefits are suppressed while you are Sea-Bound.</p>",
+      "gm": "<p>The water weakness is deliberately NOT gated on !devil-fruit:suppressed — in One Piece lore, Logia users remain weak to their element's counter even while Sea-Bound.</p>"
+    },
+    "rules": [
+      {
+        "key": "ImmunityData",
+        "type": ["fire"],
+        "predicate": ["!devil-fruit:suppressed"]
+      },
+      {
+        "key": "ImmunityData",
+        "type": ["physical"],
+        "exceptions": ["magical"],
+        "predicate": ["!devil-fruit:suppressed"],
+        "label": "Logia Intangibility (suppressed while Sea-Bound)"
+      },
+      {
+        "key": "Weakness",
+        "type": "water",
+        "value": 5
+      }
+    ],
+    "slug": "flame-human-dedication",
+    "traits": {
+      "value": ["archetype", "dedication", "fire"],
+      "rarity": "common"
+    },
+    "level": { "value": 1 },
+    "featType": { "value": "archetype" },
+    "prerequisites": { "value": [] },
+    "actionType": { "value": "passive" },
+    "actions": { "value": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "flame-human"
+    }
+  }
+}

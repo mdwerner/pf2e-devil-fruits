@@ -1,0 +1,42 @@
+{
+  "_id": "deatharia0000001",
+  "_key": "!items!deatharia0000001",
+  "name": "Death Aria",
+  "type": "feat",
+  "img": "icons/magic/death/skull-crown-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Archetype, Occult</strong></p><p>Your bond with death deepens to an absolute pact. You gain the following permanent benefits (suppressed while Sea-Bound):</p><ul><li><strong>Death Cheat</strong> now triggers <strong>twice per day</strong> instead of once.</li><li>You are <strong>immune to death effects</strong> and the <strong>frightened condition</strong>.</li><li><strong>Soul Feedback:</strong> Whenever a creature critically fails a saving throw against one of your Revive-Revive archetype abilities, it becomes <strong>Drained 1</strong> (in addition to other effects).</li></ul>",
+      "gm": ""
+    },
+    "rules": [
+      {
+        "key": "ImmunityData",
+        "type": ["death"],
+        "predicate": ["!devil-fruit:suppressed"]
+      },
+      {
+        "key": "ImmunityData",
+        "type": ["fear"],
+        "predicate": ["!devil-fruit:suppressed"]
+      }
+    ],
+    "slug": "death-aria",
+    "traits": {
+      "value": ["archetype", "occult"],
+      "rarity": "common"
+    },
+    "level": { "value": 18 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Revive-Revive Dedication" }]
+    },
+    "actionType": { "value": "passive" },
+    "actions": { "value": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "revive-revive"
+    }
+  }
+}

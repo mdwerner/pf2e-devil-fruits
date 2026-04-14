@@ -1,0 +1,31 @@
+{
+  "_id": "underworldwalk01",
+  "_key": "!items!underworldwalk01",
+  "name": "Underworld Walk",
+  "type": "feat",
+  "img": "icons/magic/death/skull-shadow-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[1 action] Archetype, Concentrate, Occult</strong></p><p>Your soul briefly drags you halfway into the ethereal plane. Until the end of your current turn, you gain:</p><ul><li>You can <strong>move through solid objects and creatures</strong> (you cannot end your movement inside them).</li><li>You are <strong>immune to non-magical physical damage</strong>.</li><li>You ignore <strong>difficult terrain</strong>.</li><li>Your movement does <strong>not provoke reactions</strong>.</li></ul><p>At the end of your turn, you return fully to the material plane. If you end your turn inside an object or creature, you are shunted to the nearest open space and take 2d6 force damage.</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "gm": ""
+    },
+    "rules": [],
+    "slug": "underworld-walk",
+    "traits": {
+      "value": ["archetype", "concentrate", "occult"],
+      "rarity": "common"
+    },
+    "level": { "value": 10 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Revive-Revive Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 1 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "revive-revive"
+    }
+  }
+}

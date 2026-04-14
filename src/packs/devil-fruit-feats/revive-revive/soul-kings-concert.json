@@ -1,0 +1,31 @@
+{
+  "_id": "soulkingconcrt01",
+  "_key": "!items!soulkingconcrt01",
+  "name": "Soul King's Concert",
+  "type": "feat",
+  "img": "icons/magic/death/undead-ghost-strike-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[2 actions] Archetype, Auditory, Concentrate, Incapacitation, Mental, Occult</strong></p><p>You perform the ultimate soul-music, flooding the battlefield with the overwhelming cold presence of death. All creatures within <strong>60 feet</strong> must attempt a Will save (DC 10 + your level + your Charisma modifier). Undead and constructs are unaffected.</p><table><tr><th>Result</th><th>Effect</th></tr><tr><td><strong>Critical Success</strong></td><td>No effect</td></tr><tr><td><strong>Success</strong></td><td>Stunned 1</td></tr><tr><td><strong>Failure</strong></td><td>Paralyzed for 1 round and Drained 1</td></tr><tr><td><strong>Critical Failure</strong></td><td>Dominated (Will DC, same value) for 1 minute, Drained 2, and takes 4d8 cold + 4d8 negative damage</td></tr></table><p>You can use Soul King's Concert <strong>once per day</strong>.</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "gm": "<p>Soul King's Concert is intentionally the pinnacle of Revive-Revive power. The Dominated condition on a critical failure is strong — confirm with your table how Dominated works in your campaign context (standard PF2E Dominated lasts until the Will save is made at end of each turn).</p>"
+    },
+    "rules": [],
+    "slug": "soul-kings-concert",
+    "traits": {
+      "value": ["archetype", "auditory", "concentrate", "incapacitation", "mental", "occult"],
+      "rarity": "common"
+    },
+    "level": { "value": 20 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Revive-Revive Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 2 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "revive-revive"
+    }
+  }
+}

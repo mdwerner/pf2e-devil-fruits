@@ -1,13 +1,13 @@
 {
   "_id": "devilfruitsunn0001",
   "_key": "!items!devilfruitsunn0001",
-  "name": "Devil Fruit: Mera Mera no Mi (Example)",
+  "name": "Devil Fruit: Mera Mera no Mi",
   "type": "equipment",
   "img": "icons/consumables/fruit/orange.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Archetype Artifact — Devil Fruit (Logia)</strong></p><p>A bright orange, flame-shaped fruit. Consuming it grants the <strong>Flame-Human archetype</strong>, transforming the user into a living embodiment of fire.</p><hr/><p><strong>Passive (Logia Intangibility):</strong> Non-magical physical attacks pass harmlessly through your flame-form. You gain immunity to fire damage and weakness 5 to water damage. This passive is suppressed while Sea-Bound.</p><p><strong>Activate</strong> [one-action] (concentrate, fire) — You hurl a bolt of fire: ranged Strike, 60 feet, 2d6 fire damage (add your level to damage). Targets may attempt a DC (8 + your level + highest mental modifier) basic Reflex save.</p><hr/><p><strong>Trait: Sea-Bound.</strong> While submerged in standing seawater (at least waist-deep) or in contact with Seastone, you are Slowed 1, Clumsy 1, and cannot use any actions or passives granted by your Devil Fruit archetype. If fully submerged, you are Stunned until removed from the water.</p><p><em>A creature may only ever consume one Devil Fruit. Consuming a second is instantly fatal.</em></p>",
-      "gm": "<p>Logia intangibility is one of the most powerful effects in the game. The suppression via devil-fruit:suppressed roll option is critical. Expand with your campaign's feat chain. The physical immunity RE is listed below but you should confirm the predicate logic suits your system version.</p>"
+      "value": "<p><strong>Archetype Artifact — Devil Fruit (Logia)</strong></p><p>A bright orange fruit shaped like a stylized flame, its surface divided into flame-petal segments. Consuming the Mera Mera no Mi transforms your body into living fire, granting the <strong>Flame-Human archetype</strong> and the power of Logia Intangibility.</p><hr/><p><strong>Flame-Human Archetype Progression</strong></p><p>Upon consuming this fruit, you immediately gain the <em>Flame-Human Dedication</em> feat. Additional archetype feats are automatically unlocked as you level up:</p><ul><li><strong>Level 4:</strong> Hiken (Fire Fist) — Compressed fire-fist ranged strike at 30 feet</li><li><strong>Level 6:</strong> Hibashira (Fire Pillar) — Erupting fire column, 10-foot burst</li><li><strong>Level 8:</strong> Hidaruma (Firethrower) — Continuous flame stream in a 30-foot line</li><li><strong>Level 10:</strong> Flame Barrier — Persistent fire zone, difficult terrain + damage</li><li><strong>Level 12:</strong> Fire Form — Full flame dissolution, move through spaces</li><li><strong>Level 14:</strong> Flame Commandment — Massive 20-foot burst detonation</li><li><strong>Level 16:</strong> Inshi (Fire Emperor's Slash) — 60-foot fire blade wave</li><li><strong>Level 18:</strong> Empyrean Fire — Full physical immunity, blazing aura</li><li><strong>Level 20:</strong> Dai Enkai: Entei — Miniature sun, 30-foot burst devastation</li></ul><hr/><p><strong>Inherent Weakness:</strong> You have weakness 5 to water damage. This weakness is never suppressed.</p><p><strong>Trait: Sea-Bound.</strong> While submerged in standing seawater (at least waist-deep) or in contact with Seastone, you are Slowed 1, Clumsy 1, and cannot use any actions or passives granted by your Devil Fruit archetype. If fully submerged, you are Stunned until removed from the water.</p><p><em>A creature may only ever consume one Devil Fruit. Consuming a second is instantly fatal.</em></p>",
+      "gm": "<p>The Mera Mera no Mi is a Logia-type fruit — the most powerful class. The Logia Intangibility (physical immunity, except magical) and water weakness are defined in the Flame-Human Dedication feat. The weakness is NOT gated on !devil-fruit:suppressed by design. The GrantItem rules here auto-grant the progression feats from the Devil Fruit Feats compendium pack using level predicates ({\"gte\": [\"actor:level\", N]}).</p>"
     },
     "slug": "devil-fruit-mera-mera-no-mi",
     "traits": {
@@ -30,23 +30,73 @@
         "add": ["sea-bound"]
       },
       {
-        "key": "DamageAlteration",
-        "property": "immunity",
-        "itemType": "condition",
-        "slug": "fire",
-        "predicate": ["!devil-fruit:suppressed"]
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.flamehumandedic01",
+        "flag": "flameHumanDedication",
+        "onDeleteActions": { "grantee": "restrict" }
       },
       {
-        "key": "Weakness",
-        "type": "water",
-        "value": 5
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.hikenfist0000001",
+        "flag": "hikenGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 4]}]
       },
       {
-        "key": "ImmunityData",
-        "type": ["physical"],
-        "exceptions": ["magical"],
-        "predicate": ["!devil-fruit:suppressed"],
-        "label": "Logia Intangibility (suppressed while Sea-Bound)"
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.hibashirapillar1",
+        "flag": "hibashiraGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 6]}]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.hidarumaflame001",
+        "flag": "hidarumaGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 8]}]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.flamebarrier0001",
+        "flag": "flameBarrierGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 10]}]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.fireformlogia001",
+        "flag": "fireFormGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 12]}]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.flamecmnd0000001",
+        "flag": "flameCommandmentGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 14]}]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.inshifirecut0001",
+        "flag": "inshiGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 16]}]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.empyreanfire0001",
+        "flag": "empyreanFireGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 18]}]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-devil-fruit-artifacts.devil-fruit-feats.Item.daienkaientei001",
+        "flag": "enteiGrant",
+        "onDeleteActions": { "grantee": "restrict" },
+        "predicate": [{"gte": ["actor:level", 20]}]
       }
     ],
     "category": "held",

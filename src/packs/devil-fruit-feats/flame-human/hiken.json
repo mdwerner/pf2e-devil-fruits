@@ -1,0 +1,31 @@
+{
+  "_id": "hikenfist0000001",
+  "_key": "!items!hikenfist0000001",
+  "name": "Hiken (Fire Fist)",
+  "type": "feat",
+  "img": "icons/magic/fire/projectile-fireball-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[1 action] Archetype, Concentrate, Fire</strong></p><p>You compress your fist into a mass of superheated flame and hurl it forward. Make a ranged Strike (range 30 feet) using your unarmed attack bonus. This Strike deals <strong>fire damage</strong> equal to your normal unarmed damage plus an additional <strong>1d8 fire damage</strong>.</p><p><strong>Critical Hit:</strong> The target gains <strong>persistent fire damage 1d6</strong>.</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "gm": ""
+    },
+    "rules": [],
+    "slug": "hiken-fire-fist",
+    "traits": {
+      "value": ["archetype", "concentrate", "fire"],
+      "rarity": "common"
+    },
+    "level": { "value": 4 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Flame-Human Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 1 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "flame-human"
+    }
+  }
+}

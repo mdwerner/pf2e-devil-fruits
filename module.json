@@ -76,9 +76,9 @@
       }
     },
     {
-      "name": "rubber-human-feats",
-      "label": "Rubber-Human Archetype Feats",
-      "path": "packs/rubber-human-feats",
+      "name": "devil-fruit-feats",
+      "label": "Devil Fruit Archetype Feats",
+      "path": "packs/devil-fruit-feats",
       "type": "Item",
       "system": "pf2e",
       "ownership": {
