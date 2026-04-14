@@ -1,0 +1,36 @@
+{
+  "_id": "eternapose000001",
+  "_key": "!items!eternapose000001",
+  "name": "Eternal Pose",
+  "type": "equipment",
+  "img": "icons/tools/navigation/compass-rose-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Eternal Pose</strong> <em>Item 5</em></p><p><strong>Rare</strong></p><p>An Eternal Pose is a Log Pose permanently sealed to point toward a single, specific island. Unlike a standard Log Pose, it never needs to calibrate and cannot be reset — it will always point unerringly to its destination, regardless of the magnetic pull of other islands along the route. They are rare and expensive, often used by the World Government, powerful pirate crews, or merchants with a fixed trading route.</p><p><strong>Navigation Bonus:</strong> You gain a +2 circumstance bonus to Survival checks to navigate by sea toward the Eternal Pose's fixed destination. This bonus applies even in areas that would disorient a standard Log Pose (such as islands with extreme magnetic fields).</p><p><strong>Fixed Destination:</strong> When you acquire an Eternal Pose, its destination is already set and cannot be changed. Work with your GM to determine which island it points to.</p><p><strong>Always Calibrated:</strong> An Eternal Pose is never affected by calibration delays and functions immediately, even on arrival at a new island.</p><p><em>An Eternal Pose pointing to a lost or destroyed island will spin in endless, fruitless circles.</em></p>",
+      "gm": "<p>The destination island should be determined at the time the item is introduced into the campaign. Consider making Eternal Poses to important locations (a government stronghold, a legendary island, a villain's base) plot-relevant items. Unlike a Log Pose, losing or destroying an Eternal Pose is significant — there may only be a handful in existence pointing to any given island.</p>"
+    },
+    "slug": "eternal-pose",
+    "traits": {
+      "value": [],
+      "rarity": "rare"
+    },
+    "level": { "value": 5 },
+    "price": { "value": { "gp": 250 } },
+    "quantity": 1,
+    "bulk": { "value": "L" },
+    "equipped": {
+      "carryType": "worn",
+      "inSlot": true,
+      "invested": null
+    },
+    "usage": { "value": "wornwrists" },
+    "rules": [],
+    "category": "worn",
+    "group": null,
+    "baseItem": null,
+    "material": { "type": null, "grade": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": { "itemType": "navigation-item" }
+  }
+}

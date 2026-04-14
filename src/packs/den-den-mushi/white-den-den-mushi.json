@@ -1,0 +1,75 @@
+{
+  "_id": "dendenWhite00001",
+  "_key": "!actors!dendenWhite00001",
+  "name": "White Den Den Mushi",
+  "type": "npc",
+  "img": "icons/creatures/invertebrates/snail-shelled-white.webp",
+  "system": {
+    "abilities": {
+      "str": {"mod": -1},
+      "dex": {"mod": 0},
+      "con": {"mod": 2},
+      "int": {"mod": -1},
+      "wis": {"mod": 3},
+      "cha": {"mod": 0}
+    },
+    "attributes": {
+      "hp": {"value": 28, "max": 28, "temp": 0, "details": ""},
+      "ac": {"value": 16, "details": ""},
+      "speed": {"value": 10, "otherSpeeds": []},
+      "allSaves": {"value": ""},
+      "immunities": [],
+      "weaknesses": [],
+      "resistances": []
+    },
+    "saves": {
+      "fortitude": {"value": 10, "saveDetail": ""},
+      "reflex": {"value": 5, "saveDetail": ""},
+      "will": {"value": 8, "saveDetail": ""}
+    },
+    "traits": {
+      "value": ["animal"],
+      "rarity": "rare",
+      "size": {"value": "small"},
+      "languages": {"value": [], "custom": ""}
+    },
+    "details": {
+      "level": {"value": 2},
+      "alignment": {"value": "N"},
+      "blurb": "A pure-white snail that emits a constant psychic hum, blocking all Den Den Mushi signals in the area.",
+      "publicNotes": "<p>White Den Den Mushi are counter-intelligence snails with pale shells and a deep rhythmic hum that disrupts the psychic frequencies used by other Den Den Mushi. While active, all Den Den Mushi communication in the area is suppressed — calls drop, connections cannot be established, and no transmissions can enter or leave.</p><p>They are used to secure meeting rooms, prevent enemies from calling for reinforcements, and protect sensitive locations from wiretapping.</p>",
+      "privateNotes": "<p>The jamming field is always active while the snail is awake. It can be temporarily deactivated by coaxing it to retract into its shell (DC 18 Nature check, 2 actions) or by knocking it unconscious. The White Den Den Mushi cannot transmit communication itself — it only disrupts. Its own psychic hum is not affected by its field.</p>",
+      "source": {"value": ""}
+    },
+    "perception": {
+      "value": 7,
+      "senses": [{"type": "scent", "acuity": "imprecise", "range": 30}]
+    },
+    "skills": {}
+  },
+  "items": [
+    {
+      "_id": "JammingField001",
+      "_key": "!actors.items!dendenWhite00001.JammingField001",
+      "name": "Jamming Field",
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "system": {
+        "actionType": {"value": "passive"},
+        "actions": {"value": null},
+        "description": {
+          "value": "<p><strong>Aura</strong> 60 feet</p><p>While the White Den Den Mushi is awake and active, all Den Den Mushi communication (including Baby Den Den Mushi relays) within this emanation is suppressed. Calls already in progress are immediately dropped. New connections cannot be established. The field does not affect other forms of magical communication.</p>"
+        },
+        "traits": {"value": ["aura", "magical", "transmutation"]},
+        "requirements": "",
+        "trigger": "",
+        "category": "offensive",
+        "rules": [],
+        "slug": null
+      }
+    }
+  ],
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {"itemType": "den-den-mushi", "variant": "white"}
+  }
+}

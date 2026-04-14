@@ -1,0 +1,36 @@
+{
+  "_id": "itemBabyDDM00001",
+  "_key": "!items!itemBabyDDM00001",
+  "name": "Baby Den Den Mushi",
+  "type": "equipment",
+  "img": "icons/creatures/invertebrates/snail-shelled-white.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Baby Den Den Mushi</strong> <em>Item 2</em></p><p><strong>Uncommon</strong></p><p>A tiny snail worn on the wrist or kept in a breast pocket. It is psychically bonded to a specific larger Den Den Mushi (established when purchased — work with your GM to determine which one). When a call comes in, the snail stirs and its face briefly mimics the caller's expression.</p><p><strong>Long-Range Communication:</strong> As a single action, you can use the Baby Den Den Mushi to initiate a voice call with its bonded Den Den Mushi at any range, provided neither snail is in a jamming field. The call is two-way and can be maintained as long as both parties wish. You can also receive incoming calls (the snail wriggles to alert you).</p><p><strong>Voice Mimicry:</strong> The snail perfectly replicates the caller's voice. Listeners cannot identify the transmission as a relay through mundane means (DC 20 Perception to notice).</p><p><em>Dropping the snail in seawater cuts the call immediately. It is not waterproof.</em></p>",
+      "gm": "<p>At time of purchase, record which Den Den Mushi this Baby is bonded to. If the bonded snail is destroyed, captured, or inside a White Den Den Mushi's jamming field, calls cannot connect. The bond cannot be transferred without a trained Den Den Mushi handler and a week of acclimation (cost: 50 gp).</p>"
+    },
+    "slug": "baby-den-den-mushi",
+    "traits": {
+      "value": [],
+      "rarity": "uncommon"
+    },
+    "level": {"value": 2},
+    "price": {"value": {"gp": 100}},
+    "quantity": 1,
+    "bulk": {"value": "L"},
+    "equipped": {
+      "carryType": "worn",
+      "inSlot": true,
+      "invested": null
+    },
+    "usage": {"value": "wornwrists"},
+    "rules": [],
+    "category": "worn",
+    "group": null,
+    "baseItem": null,
+    "material": {"type": null, "grade": null}
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {"itemType": "communication-item", "variant": "baby-den-den-mushi"}
+  }
+}

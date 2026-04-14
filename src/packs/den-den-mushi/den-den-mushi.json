@@ -1,0 +1,97 @@
+{
+  "_id": "dendenStand00001",
+  "_key": "!actors!dendenStand00001",
+  "name": "Den Den Mushi",
+  "type": "npc",
+  "img": "icons/creatures/invertebrates/snail-shelled-brown.webp",
+  "system": {
+    "abilities": {
+      "str": {"mod": -1},
+      "dex": {"mod": -1},
+      "con": {"mod": 1},
+      "int": {"mod": -4},
+      "wis": {"mod": 2},
+      "cha": {"mod": 2}
+    },
+    "attributes": {
+      "hp": {"value": 14, "max": 14, "temp": 0, "details": ""},
+      "ac": {"value": 14, "details": ""},
+      "speed": {"value": 10, "otherSpeeds": []},
+      "allSaves": {"value": ""},
+      "immunities": [],
+      "weaknesses": [],
+      "resistances": []
+    },
+    "saves": {
+      "fortitude": {"value": 6, "saveDetail": ""},
+      "reflex": {"value": 2, "saveDetail": ""},
+      "will": {"value": 6, "saveDetail": ""}
+    },
+    "traits": {
+      "value": ["animal"],
+      "rarity": "common",
+      "size": {"value": "small"},
+      "languages": {"value": [], "custom": ""}
+    },
+    "details": {
+      "level": {"value": 0},
+      "alignment": {"value": "N"},
+      "blurb": "The standard long-range communication snail, found on ships and in buildings across the world.",
+      "publicNotes": "<p>The Den Den Mushi is a small snail that serves as the world's primary long-range communication device. It sits on a surface and rings audibly when a call comes in, its face morphing to vaguely resemble the caller and mirroring their emotional expression.</p><p>It can relay voice over thousands of miles through an innate psychic ability not fully understood even by scholars. It has no intelligence of its own and does not understand what it transmits.</p>",
+      "privateNotes": "<p>A standard Den Den Mushi can communicate with any other Den Den Mushi — standard or Baby — provided a connection is established. The snail is entirely non-combatant: if threatened it retreats into its shell, becoming an object (AC 8, Hardness 4, HP 6) until the threat passes.</p>",
+      "source": {"value": ""}
+    },
+    "perception": {
+      "value": 6,
+      "senses": [{"type": "scent", "acuity": "imprecise", "range": 30}]
+    },
+    "skills": {
+      "prf": {"base": 5, "note": "voice mimicry only"}
+    }
+  },
+  "items": [
+    {
+      "_id": "LongRangeRely001",
+      "_key": "!actors.items!dendenStand00001.LongRangeRely001",
+      "name": "Long-Range Relay",
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "system": {
+        "actionType": {"value": "passive"},
+        "actions": {"value": null},
+        "description": {
+          "value": "<p>A Den Den Mushi can establish a voice connection with any other Den Den Mushi (including Baby variants) at unlimited range, provided both snails are on the same world and neither is in a jamming field. A creature touching the snail spends 1 action to initiate; the receiving snail rings until answered or the caller ends the attempt. One active call can be maintained at a time.</p>"
+        },
+        "traits": {"value": ["auditory", "magical", "transmutation"]},
+        "requirements": "",
+        "trigger": "",
+        "category": "interaction",
+        "rules": [],
+        "slug": null
+      }
+    },
+    {
+      "_id": "VoiceMimicry0001",
+      "_key": "!actors.items!dendenStand00001.VoiceMimicry0001",
+      "name": "Voice Mimicry",
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "system": {
+        "actionType": {"value": "passive"},
+        "actions": {"value": null},
+        "description": {
+          "value": "<p>The Den Den Mushi perfectly replicates the voice, tone, and inflection of anyone transmitting through it. A creature listening cannot distinguish it from the real voice through mundane means. Detecting the mimicry requires a successful DC 20 Perception check while actively listening for artificiality.</p>"
+        },
+        "traits": {"value": ["auditory", "illusion", "magical"]},
+        "requirements": "",
+        "trigger": "",
+        "category": "interaction",
+        "rules": [],
+        "slug": null
+      }
+    }
+  ],
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {"itemType": "den-den-mushi", "variant": "standard"}
+  }
+}

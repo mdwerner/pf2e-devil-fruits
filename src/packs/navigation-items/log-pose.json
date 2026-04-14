@@ -1,0 +1,36 @@
+{
+  "_id": "logpose000000001",
+  "_key": "!items!logpose000000001",
+  "name": "Log Pose",
+  "type": "equipment",
+  "img": "icons/tools/navigation/compass-rose-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Log Pose</strong> <em>Item 3</em></p><p><strong>Uncommon</strong></p><p>A small compass worn on the wrist, encased in a glass globe filled with a shimmering liquid. Rather than pointing north, a Log Pose records the magnetic signature of an island and locks onto the next island in the current sea route. It is the essential navigation tool for any crew sailing the Grand Line.</p><p><strong>Navigation Bonus:</strong> While calibrated, you gain a +2 circumstance bonus to Survival checks to navigate by sea within the Grand Line.</p><p><strong>Calibration:</strong> After arriving at a new island, the Log Pose must record that island's magnetic signature before it can point onward. Roll 1d6; the pose calibrates after that many days spent on or near the island. Until calibrated, the pose spins erratically and grants no bonus.</p><p><em>Some islands have such powerful magnetic fields that calibration takes weeks — or forces you to leave before you're ready.</em></p>",
+      "gm": "<p>The calibration time is intentionally variable to create narrative tension. Strong-field islands (GM's discretion) may extend calibration to 1d6 weeks. A Log Pose destroyed or dropped into the sea loses its calibration entirely.</p>"
+    },
+    "slug": "log-pose",
+    "traits": {
+      "value": [],
+      "rarity": "uncommon"
+    },
+    "level": { "value": 3 },
+    "price": { "value": { "gp": 50 } },
+    "quantity": 1,
+    "bulk": { "value": "L" },
+    "equipped": {
+      "carryType": "worn",
+      "inSlot": true,
+      "invested": null
+    },
+    "usage": { "value": "wornwrists" },
+    "rules": [],
+    "category": "worn",
+    "group": null,
+    "baseItem": null,
+    "material": { "type": null, "grade": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": { "itemType": "navigation-item" }
+  }
+}

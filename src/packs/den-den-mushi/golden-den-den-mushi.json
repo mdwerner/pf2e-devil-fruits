@@ -1,0 +1,100 @@
+{
+  "_id": "dendenGold000001",
+  "_key": "!actors!dendenGold000001",
+  "name": "Golden Den Den Mushi",
+  "type": "npc",
+  "img": "icons/creatures/invertebrates/snail-shelled-orange.webp",
+  "system": {
+    "abilities": {
+      "str": {"mod": -3},
+      "dex": {"mod": 2},
+      "con": {"mod": 1},
+      "int": {"mod": 0},
+      "wis": {"mod": 4},
+      "cha": {"mod": 3}
+    },
+    "attributes": {
+      "hp": {"value": 36, "max": 36, "temp": 0, "details": ""},
+      "ac": {"value": 20, "details": ""},
+      "speed": {"value": 10, "otherSpeeds": []},
+      "allSaves": {"value": ""},
+      "immunities": [],
+      "weaknesses": [],
+      "resistances": []
+    },
+    "saves": {
+      "fortitude": {"value": 12, "saveDetail": ""},
+      "reflex": {"value": 12, "saveDetail": ""},
+      "will": {"value": 15, "saveDetail": ""}
+    },
+    "traits": {
+      "value": ["animal"],
+      "rarity": "unique",
+      "size": {"value": "tiny"},
+      "languages": {"value": [], "custom": ""}
+    },
+    "details": {
+      "level": {"value": 5},
+      "alignment": {"value": "N"},
+      "blurb": "A legendary golden snail whose signal can authorize a Buster Call — a full naval bombardment of an island.",
+      "publicNotes": "<p>Golden Den Den Mushi are impossibly rare snails with gleaming golden shells. Only a handful are known to exist, each held under the authority of the World Government's highest ranks. Their sole purpose is to authorize a <strong>Buster Call</strong> — a devastating military response that commands a naval fleet to bombard a target island into ruin.</p><p>A Golden Den Den Mushi can also broadcast simultaneously to every Den Den Mushi in a region, making it a tool for emergency fleet-wide communication.</p>",
+      "privateNotes": "<p>Activating a Buster Call is a campaign-altering event. The signal is detectable by World Government naval vessels within 500 miles. A fleet of five Marine warships is dispatched and arrives within 1d4 days. The target island designation is set at the moment of activation and cannot be changed once sent. Only someone officially granted Buster Call authority by an Admiral or higher can activate the ability; the snail refuses the action otherwise (treat as automatic failure, no roll).</p>",
+      "source": {"value": ""}
+    },
+    "perception": {
+      "value": 13,
+      "senses": [
+        {"type": "scent", "acuity": "imprecise", "range": 30},
+        {"type": "darkvision"}
+      ]
+    },
+    "skills": {
+      "prf": {"base": 11, "note": ""}
+    }
+  },
+  "items": [
+    {
+      "_id": "BusterCallSig01",
+      "_key": "!actors.items!dendenGold000001.BusterCallSig01",
+      "name": "Buster Call Signal",
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/TwoActions.webp",
+      "system": {
+        "actionType": {"value": "action"},
+        "actions": {"value": 2},
+        "description": {
+          "value": "<p><strong>Requirements</strong> The bearer has been granted Buster Call authority by an Admiral or higher; the snail is not in a jamming field</p><hr/><p>The bearer transmits a Buster Call signal through the Golden Den Den Mushi, designating a target island. A fleet of five Marine warships is immediately dispatched; they arrive within <strong>1d4 days</strong> and begin bombardment. Once sent, the signal cannot be recalled or redirected.</p><p>After this ability is used, it cannot be used again until the snail is re-authorized by a sitting Admiral (a process requiring 1 week).</p>"
+        },
+        "traits": {"value": ["auditory", "magical", "transmutation"]},
+        "requirements": "",
+        "trigger": "",
+        "category": "interaction",
+        "rules": [],
+        "slug": null
+      }
+    },
+    {
+      "_id": "GlobalBroadcst1",
+      "_key": "!actors.items!dendenGold000001.GlobalBroadcst1",
+      "name": "Global Broadcast",
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/OneAction.webp",
+      "system": {
+        "actionType": {"value": "action"},
+        "actions": {"value": 1},
+        "description": {
+          "value": "<p>The Golden Den Den Mushi broadcasts a single spoken message simultaneously to all Den Den Mushi within 500 miles. Each receiving snail rings once and relays the message. This ability can be used freely and does not require authorization.</p>"
+        },
+        "traits": {"value": ["auditory", "magical", "transmutation"]},
+        "requirements": "",
+        "trigger": "",
+        "category": "interaction",
+        "rules": [],
+        "slug": null
+      }
+    }
+  ],
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {"itemType": "den-den-mushi", "variant": "golden"}
+  }
+}

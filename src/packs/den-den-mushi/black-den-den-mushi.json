@@ -1,0 +1,101 @@
+{
+  "_id": "dendenBlack00001",
+  "_key": "!actors!dendenBlack00001",
+  "name": "Black Den Den Mushi",
+  "type": "npc",
+  "img": "icons/creatures/invertebrates/snail-shelled-brown.webp",
+  "system": {
+    "abilities": {
+      "str": {"mod": -3},
+      "dex": {"mod": 3},
+      "con": {"mod": 0},
+      "int": {"mod": -1},
+      "wis": {"mod": 3},
+      "cha": {"mod": 0}
+    },
+    "attributes": {
+      "hp": {"value": 16, "max": 16, "temp": 0, "details": ""},
+      "ac": {"value": 17, "details": "natural armor"},
+      "speed": {"value": 15, "otherSpeeds": []},
+      "allSaves": {"value": ""},
+      "immunities": [],
+      "weaknesses": [],
+      "resistances": []
+    },
+    "saves": {
+      "fortitude": {"value": 6, "saveDetail": ""},
+      "reflex": {"value": 10, "saveDetail": ""},
+      "will": {"value": 8, "saveDetail": ""}
+    },
+    "traits": {
+      "value": ["animal"],
+      "rarity": "rare",
+      "size": {"value": "tiny"},
+      "languages": {"value": [], "custom": ""}
+    },
+    "details": {
+      "level": {"value": 2},
+      "alignment": {"value": "N"},
+      "blurb": "A jet-black snail with a natural talent for silently intercepting Den Den Mushi communications.",
+      "publicNotes": "<p>Black Den Den Mushi have jet-black shells that absorb light. They possess an innate ability to silently tap into any active Den Den Mushi communication within range, recording the exchange without alerting either party. Neither the snail nor anything it records makes a sound.</p><p>The World Government uses them extensively for surveillance, though pirate crews and criminal organizations covet them equally.</p>",
+      "privateNotes": "<p>A Black Den Den Mushi can only intercept — it cannot initiate calls of its own. It stores up to 24 hours of recorded audio internally. Extracting a recording requires 10 minutes of handling and a DC 18 Nature check (automatic with proper World Government equipment).</p><p>If detected by a creature on the tapped call, the Black Den Den Mushi's instinct is to flee, not fight.</p>",
+      "source": {"value": ""}
+    },
+    "perception": {
+      "value": 9,
+      "senses": [
+        {"type": "scent", "acuity": "imprecise", "range": 30},
+        {"type": "tremorsense", "acuity": "imprecise", "range": 30}
+      ]
+    },
+    "skills": {
+      "ste": {"base": 12, "note": ""},
+      "dec": {"base": 6, "note": ""}
+    }
+  },
+  "items": [
+    {
+      "_id": "Wiretap00000001",
+      "_key": "!actors.items!dendenBlack00001.Wiretap00000001",
+      "name": "Wiretap",
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/OneAction.webp",
+      "system": {
+        "actionType": {"value": "action"},
+        "actions": {"value": 1},
+        "description": {
+          "value": "<p>The Black Den Den Mushi silently taps into any active Den Den Mushi call within 60 feet. Neither party on the call is aware of the intercept. The snail records the conversation internally (up to 24 hours total). To begin tapping, the creature handling the snail spends 1 action; the snail then attempts a Stealth check against DC 20 — on a failure, a party on the call notices something feels wrong and may attempt a Perception check (DC = snail's Stealth result) to identify eavesdropping.</p>"
+        },
+        "traits": {"value": ["auditory", "magical", "transmutation"]},
+        "requirements": "An active Den Den Mushi call is occurring within 60 feet",
+        "trigger": "",
+        "category": "interaction",
+        "rules": [],
+        "slug": null
+      }
+    },
+    {
+      "_id": "NaturalCamou0001",
+      "_key": "!actors.items!dendenBlack00001.NaturalCamou0001",
+      "name": "Natural Camouflage",
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "system": {
+        "actionType": {"value": "passive"},
+        "actions": {"value": null},
+        "description": {
+          "value": "<p>The Black Den Den Mushi's shell naturally absorbs ambient light. It gains a +4 circumstance bonus to Stealth checks in dim light or darkness.</p>"
+        },
+        "traits": {"value": []},
+        "requirements": "",
+        "trigger": "",
+        "category": "defensive",
+        "rules": [],
+        "slug": null
+      }
+    }
+  ],
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {"itemType": "den-den-mushi", "variant": "black"}
+  }
+}

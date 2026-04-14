@@ -1,0 +1,36 @@
+{
+  "_id": "itemShipDDM00001",
+  "_key": "!items!itemShipDDM00001",
+  "name": "Den Den Mushi",
+  "type": "equipment",
+  "img": "icons/creatures/invertebrates/snail-shelled-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Den Den Mushi</strong> <em>Item 3</em></p><p><strong>Common</strong></p><p>A small snail kept in a dedicated cradle on a ship or in a building, serving as the primary long-range communication device. It rings audibly when a call comes in and mimics the caller's voice and expression. Any creature can pick up the call by touching the snail and speaking.</p><p><strong>Long-Range Communication:</strong> As a single action, a creature touching the Den Den Mushi can initiate or receive a voice call with any other Den Den Mushi (including Baby variants) at unlimited range, provided neither snail is in a jamming field. The call is two-way and fully audible to anyone within 10 feet of the snail.</p><p><strong>Voice Mimicry:</strong> The snail perfectly replicates the caller's voice. Listeners cannot identify the transmission as a relay through mundane means (DC 20 Perception to notice).</p><p><strong>Non-Combatant:</strong> If threatened, the Den Den Mushi retreats into its shell (Hardness 4, HP 6, BT 3), cutting any active call. It emerges again once the threat passes.</p><p><em>Standard issue for any ship sailing the Grand Line. Pirate crews, merchant vessels, and naval warships all rely on them.</em></p>",
+      "gm": "<p>A ship's Den Den Mushi can call any other snail in the world — there is no bond restriction like the Baby variant. However, the caller must know the 'number' (the identity) of the target snail; calling a random snail requires GM adjudication. Den Den Mushi are generally treated as neutral parties — they relay whatever they hear without judgment.</p>"
+    },
+    "slug": "den-den-mushi",
+    "traits": {
+      "value": [],
+      "rarity": "common"
+    },
+    "level": {"value": 3},
+    "price": {"value": {"gp": 200}},
+    "quantity": 1,
+    "bulk": {"value": "2"},
+    "equipped": {
+      "carryType": "carried",
+      "inSlot": false,
+      "invested": null
+    },
+    "usage": {"value": "carried"},
+    "rules": [],
+    "category": "held",
+    "group": null,
+    "baseItem": null,
+    "material": {"type": null, "grade": null}
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {"itemType": "communication-item", "variant": "den-den-mushi"}
+  }
+}
