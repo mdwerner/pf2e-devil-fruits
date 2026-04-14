@@ -6,20 +6,20 @@
   "img": "icons/magic/death/undead-skeleton-resting-orange.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Archetype Dedication</strong></p><p>You have consumed the Yomi Yomi no Mi, bonding a second soul to your body and granting the <strong>Revive-Revive archetype</strong>. Your connection to death grants the following benefits while your Devil Fruit is not suppressed:</p><ul><li><strong>Death Cheat (once per day):</strong> The first time you would be reduced to 0 HP in a day, you instead remain at 1 HP. The death simply doesn't stick.</li><li>You gain <strong>resistance 5 to cold and negative damage</strong>.</li><li>You do not need to eat, drink, or breathe (your soul sustains your body).</li></ul><p>All other archetype benefits are suppressed while you are Sea-Bound.</p>",
+      "value": "<p><strong>Archetype Dedication</strong></p><p>You have consumed the Yomi Yomi no Mi, bonding a second soul to your body and granting the <strong>Revive-Revive archetype</strong>. Your connection to death grants the following benefits while your Devil Fruit is not suppressed:</p><ul><li><strong>Death Cheat (once per day):</strong> The first time you would be reduced to 0 HP in a day, you instead remain at 1 HP. The death simply doesn't stick.</li><li>You gain <strong>resistance to cold and negative damage equal to your level (minimum 5)</strong>.</li><li>You do not need to eat, drink, or breathe (your soul sustains your body).</li></ul><p>All other archetype benefits are suppressed while you are Sea-Bound.</p>",
       "gm": "<p>Death Cheat is a once-per-day narrative mechanic — track it manually. In PF2E terms, treat it as the Deathless ability: the hit that would take you to 0 instead takes you to 1 HP.</p>"
     },
     "rules": [
       {
         "key": "Resistance",
         "type": "cold",
-        "value": 5,
+        "value": "max(5, @actor.level)",
         "predicate": ["!devil-fruit:suppressed"]
       },
       {
         "key": "Resistance",
         "type": "negative",
-        "value": 5,
+        "value": "max(5, @actor.level)",
         "predicate": ["!devil-fruit:suppressed"]
       }
     ],

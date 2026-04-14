@@ -1,0 +1,31 @@
+{
+  "_id": "gumgumpistol00001",
+  "_key": "!items!gumgumpistol00001",
+  "name": "Gum-Gum Pistol",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-fist-orange-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[1 action] Archetype, Concentrate</strong></p><p>You rocket a stretched fist forward at tremendous speed. Make a melee Strike with your unarmed attack against a target within <strong>20 feet</strong>. This Strike gains a <strong>+1 circumstance bonus to the attack roll</strong>. On a hit, add <strong>1d6 extra bludgeoning damage</strong>.</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "gm": ""
+    },
+    "rules": [],
+    "slug": "gum-gum-pistol",
+    "traits": {
+      "value": ["archetype", "concentrate"],
+      "rarity": "common"
+    },
+    "level": { "value": 4 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Rubber-Human Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 1 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "rubber-human"
+    }
+  }
+}

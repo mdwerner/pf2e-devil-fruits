@@ -1,0 +1,31 @@
+{
+  "_id": "gearfifthnka00001",
+  "_key": "!items!gearfifthnka00001",
+  "name": "Gear Fifth: Nika Awakening",
+  "type": "feat",
+  "img": "icons/magic/holy/sun-cross-yellow-white.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[2 actions] Archetype, Concentrate, Morph, Primal</strong></p><p>You awaken the true nature of the Gomu Gomu no Mi — the Hito Hito no Mi: Model Nika — channeling the power of the Sun God. Your heartbeat changes to a rhythm that sounds like a drum, and your hair and clothing turn white. For <strong>1 minute</strong>, you gain:</p><ul><li>A <strong>+3 status bonus to all attack rolls, saving throws, and skill checks</strong>.</li><li>Immunity to <strong>bludgeoning damage</strong>.</li><li>A <strong>fly Speed of 40 feet</strong>.</li><li>Your unarmed Strikes are treated as <strong>adamantine and magical</strong> for overcoming resistances and immunities.</li><li><strong>Rubber Reality [free action]</strong> (once per round) — You treat any surface, object, or creature within 30 feet as rubber for 1 round. Your GM determines the creative effects.</li></ul><p><strong>Recharge:</strong> When Gear Fifth ends, you are <strong>Slowed 2</strong> and <strong>Fatigued</strong> until your next daily preparations. You cannot activate Gear Fifth again until your next daily preparations.</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "gm": "<p>Gear Fifth: Nika is intentionally the pinnacle of Rubber-Human power. The daily recharge and severe post-use penalties reflect its weight in the source material. The Rubber Reality ability is deliberately open-ended — discuss with your group what creative uses are appropriate.</p>"
+    },
+    "rules": [],
+    "slug": "gear-fifth-nika-awakening",
+    "traits": {
+      "value": ["archetype", "concentrate", "morph", "primal"],
+      "rarity": "common"
+    },
+    "level": { "value": 20 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Rubber-Human Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 2 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "rubber-human"
+    }
+  }
+}

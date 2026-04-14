@@ -1,0 +1,31 @@
+{
+  "_id": "gumgumbazooka0001",
+  "_key": "!items!gumgumbazooka0001",
+  "name": "Gum-Gum Bazooka",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-fist-yellow-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[2 actions] Archetype, Concentrate</strong></p><p>You launch both fists into a single target simultaneously. Make two unarmed Strikes against the same target; both use your current multiple attack penalty. If both Strikes hit, the target takes an additional <strong>2d6 bludgeoning damage</strong> and must attempt a your class DC Fortitude save or be <strong>pushed 10 feet</strong>. On a critical failure, it is also knocked <strong>prone</strong>.</p><p><em>Suppressed while Sea-Bound.</em></p>",
+      "gm": ""
+    },
+    "rules": [],
+    "slug": "gum-gum-bazooka",
+    "traits": {
+      "value": ["archetype", "concentrate"],
+      "rarity": "common"
+    },
+    "level": { "value": 8 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Rubber-Human Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 2 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": {
+      "archetypeSlug": "rubber-human"
+    }
+  }
+}
