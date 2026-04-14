@@ -109,6 +109,17 @@
       }
     },
     {
+      "name": "haki-feats",
+      "label": "Haki Archetype Feats",
+      "path": "packs/haki-feats",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
       "name": "den-den-mushi",
       "label": "Den Den Mushi",
       "path": "packs/den-den-mushi",

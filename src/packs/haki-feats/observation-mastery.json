@@ -1,0 +1,38 @@
+{
+  "_id": "observeMastery01",
+  "_key": "!items!observeMastery01",
+  "name": "Observation Mastery",
+  "type": "feat",
+  "img": "icons/magic/perception/eye-ringed-glow-attached-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Archetype</strong></p><p>Your Observation Haki has matured into something approaching a sixth sense. You perceive the world around you in a way ordinary senses cannot match.</p><ul><li>Your imprecise sense range extends to <strong>60 feet</strong>. Within <strong>30 feet</strong>, the sense becomes <strong>precise</strong> — you can pinpoint exact locations of living and undead creatures even through walls, in darkness, or while blinded, as if you could see them normally.</li><li>Once per round as a <strong>free action</strong>, you may Seek without spending an action.</li><li>You gain a <strong>+2 circumstance bonus</strong> to Perception checks to disbelieve illusions and to saves against <strong>Deception</strong>-based effects (such as feints and deceptive spells).</li><li><strong>Brief Future Sight:</strong> Once per day as a free action, you may reroll any one failed attack roll, saving throw, or Perception check before the result is resolved. You must use the new result.</li></ul>",
+      "gm": "<p>The precise sense within 30 feet effectively removes the concealed/hidden condition for creatures the character is aware of, within that range. This is strong but appropriate at level 12. The free Seek is meant to make Perception feel effortless — this character always knows what's lurking nearby. Brief Future Sight is once per day to prevent it from trivializing encounters, reflecting the early-stage version of this ability.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "perception",
+        "value": 2,
+        "type": "circumstance",
+        "label": "Observation Mastery",
+        "predicate": ["target:deception"]
+      }
+    ],
+    "slug": "observation-mastery",
+    "traits": {
+      "value": ["archetype"],
+      "rarity": "common"
+    },
+    "level": { "value": 12 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Haki Dedication" }]
+    },
+    "actionType": { "value": "passive" },
+    "actions": { "value": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": { "archetypeSlug": "haki" }
+  }
+}

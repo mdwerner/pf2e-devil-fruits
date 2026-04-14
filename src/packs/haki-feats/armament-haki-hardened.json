@@ -1,0 +1,29 @@
+{
+  "_id": "armamentHakiHard",
+  "_key": "!items!armamentHakiHard",
+  "name": "Armament Haki: Hardened",
+  "type": "feat",
+  "img": "icons/commodities/metal/ingot-steel-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Archetype</strong></p><p>Your Armament Haki has grown dense and reliable. When you use <strong>Armament Haki</strong>, the benefits are improved:</p><ul><li>The bonus damage increases to <strong>+1d8</strong>.</li><li>The physical resistance increases to <strong>5</strong>.</li><li>The resistance bypass increases to <strong>your level</strong> (instead of 5).</li></ul><p>Additionally, you can now enter Armament Haki as a <strong>free action</strong> once per round, rather than a 1-action activation.</p>",
+      "gm": "<p>This feat makes Armament Haki nearly always-on in combat at the cost of a feat investment. The free action activation is the primary mechanical reward here — at level 6, players will often want to activate it at the start of every fight.</p>"
+    },
+    "rules": [],
+    "slug": "armament-haki-hardened",
+    "traits": {
+      "value": ["archetype"],
+      "rarity": "common"
+    },
+    "level": { "value": 6 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Armament Haki" }]
+    },
+    "actionType": { "value": "passive" },
+    "actions": { "value": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": { "archetypeSlug": "haki" }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "_id": "hakiDedicatn0001",
+  "_key": "!items!hakiDedicatn0001",
+  "name": "Haki Dedication",
+  "type": "feat",
+  "img": "icons/magic/perception/eye-ringed-glow-attached-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Archetype Dedication</strong></p><p>You have awakened Haki — the invisible power latent in all living beings, born of will and spirit. Most people go their entire lives without knowing it exists. You have not.</p><p>You gain basic <strong>Observation Haki</strong>, granting the following benefits permanently:</p><ul><li>You gain an imprecise sense that detects the presence of living and undead creatures within <strong>30 feet</strong>, even through solid barriers. You cannot pinpoint exact locations with this sense alone.</li><li>You can sense <strong>invisible</strong> creatures within 30 feet (imprecise).</li><li>You gain a <strong>+1 circumstance bonus to initiative checks</strong>.</li></ul><p>Haki is not suppressed by the <strong>Sea-Bound</strong> condition. Creatures with Devil Fruit archetypes may use Haki feats freely, even while Sea-Bound.</p><p>You cannot take a second dedication feat until you have taken two other feats from the Haki archetype.</p>",
+      "gm": "<p>Haki is intentionally separate from the Devil Fruit system — it can be taken by any character, including those with Devil Fruit archetypes. The Observation sense here is deliberately imprecise to avoid making Stealth trivially ineffective at low levels. Observation Mastery (level 12) upgrades this.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "initiative",
+        "value": 1,
+        "type": "circumstance",
+        "label": "Observation Haki"
+      }
+    ],
+    "slug": "haki-dedication",
+    "traits": {
+      "value": ["archetype", "dedication"],
+      "rarity": "uncommon"
+    },
+    "level": { "value": 2 },
+    "featType": { "value": "archetype" },
+    "prerequisites": { "value": [] },
+    "actionType": { "value": "passive" },
+    "actions": { "value": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": { "archetypeSlug": "haki" }
+  }
+}

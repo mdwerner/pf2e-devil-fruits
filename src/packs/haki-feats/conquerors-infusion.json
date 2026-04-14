@@ -1,0 +1,29 @@
+{
+  "_id": "conqInfusion0001",
+  "_key": "!items!conqInfusion0001",
+  "name": "Conqueror's Infusion",
+  "type": "feat",
+  "img": "icons/magic/lightning/bolt-charged-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[free action] Archetype, Concentrate</strong></p><p><strong>Trigger</strong> You make a Strike with Armament Haki active.</p><p>You weave Conqueror's Haki directly into a physical blow — an advanced technique that cracks the very will of those struck. The triggering Strike gains the following additional effects:</p><ul><li>On a hit, the Strike deals <strong>+4d6 force damage</strong>.</li><li>On a hit, the target must succeed at a <strong>Will saving throw (DC = your class DC)</strong> or become <strong>Frightened 2</strong> (Frightened 3 on a critical failure). A target that is already Stunned instead remains Stunned for an additional round.</li><li>On a critical hit, the target is also <strong>Stunned 1</strong> regardless of the Will save result.</li></ul><p><strong>Frequency</strong> Once per round.</p>",
+      "gm": "<p>Conqueror's Infusion is the offensive expression of what Conqueror's Haki becomes at high levels in the series — coating attacks with raw willpower rather than simply releasing it in a burst. The force damage bypasses physical resistances by nature. The Will save effect can stack with ongoing fear conditions but should not stack with itself (a target already at Frightened 3 takes no additional fear from a second use).</p>"
+    },
+    "rules": [],
+    "slug": "conquerors-infusion",
+    "traits": {
+      "value": ["archetype", "concentrate"],
+      "rarity": "rare"
+    },
+    "level": { "value": 16 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Conqueror's Haki" }]
+    },
+    "actionType": { "value": "free" },
+    "actions": { "value": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": { "archetypeSlug": "haki" }
+  }
+}

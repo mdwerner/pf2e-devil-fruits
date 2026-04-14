@@ -1,0 +1,29 @@
+{
+  "_id": "advancedArmament",
+  "_key": "!items!advancedArmament",
+  "name": "Advanced Armament",
+  "type": "feat",
+  "img": "icons/weapons/fists/fist-worn-knuckle-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Archetype</strong></p><p>Your Armament Haki has reached the level where you can emit it outward from your weapon rather than merely coating its surface — a technique that bypasses even the most hardened defenses.</p><p>When you use <strong>Armament Haki</strong>, the benefits are further improved:</p><ul><li>The bonus damage increases to <strong>+1d10</strong>.</li><li>The physical resistance increases to your <strong>level</strong>.</li><li>Your Strikes bypass physical resistances entirely, with <strong>no cap</strong>. You can harm creatures who are immune to physical damage if that immunity comes from a natural or supernatural source (such as a Logia Devil Fruit), though you cannot bypass immunity to physical damage from magic (such as stoneskin).</li><li><strong>Armament Pulse:</strong> Once per round when you make a Strike with Armament Haki active, you may choose to emit a pulse of hardened Haki. The attack gains a <strong>+5-foot reach</strong> as the pulse extends beyond the weapon's edge, and on a hit the target must succeed at a <strong>Fortitude save (DC = your class DC)</strong> or be <strong>pushed 5 feet</strong> directly away from you.</li></ul>",
+      "gm": "<p>The immunity bypass is specifically for physical-type immunities that exist in the One Piece fiction (Logia intangibility, certain creature types) — it is NOT intended to bypass magic-sourced immunities like stoneskin or heavy metal constructs. Clarify this to your players. The Armament Pulse is a fun knockback option but should feel optional — players who just want to deal damage should feel no pressure to track it.</p>"
+    },
+    "rules": [],
+    "slug": "advanced-armament",
+    "traits": {
+      "value": ["archetype"],
+      "rarity": "common"
+    },
+    "level": { "value": 14 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Armament Haki: Hardened" }]
+    },
+    "actionType": { "value": "passive" },
+    "actions": { "value": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": { "archetypeSlug": "haki" }
+  }
+}

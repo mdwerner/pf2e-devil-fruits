@@ -1,0 +1,37 @@
+{
+  "_id": "combatPrecognitn",
+  "_key": "!items!combatPrecognitn",
+  "name": "Combat Precognition",
+  "type": "feat",
+  "img": "icons/magic/perception/eye-ringed-glow-attached-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Archetype</strong></p><p>Your Observation Haki now extends seamlessly into combat, tracking every creature around you. You are never caught off guard.</p><ul><li>You are <strong>never flat-footed</strong> due to flanking.</li><li>You gain a <strong>+1 circumstance bonus to AC</strong> against the first attack made against you each round by each creature.</li><li>You cannot be <strong>ambushed</strong> — you are never flat-footed during a surprise round, and you always act in the first round of combat even if other creatures are attempting to ambush your party.</li></ul><p><em>Your senses reach in all directions at once. There are no blind spots.</em></p>",
+      "gm": "<p>The 'first attack each round per creature' bonus is meant to represent the brief advantage of reading telegraphed intent before the attacker adapts. On sheets, track this manually or treat it as a general +1 to AC. The surprise round immunity is the most significant effect — it should remove the 'you were ambushed' flat-footed condition for this character specifically, even if the rest of the party is caught off guard.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "ac",
+        "value": 1,
+        "type": "circumstance",
+        "label": "Combat Precognition"
+      }
+    ],
+    "slug": "combat-precognition",
+    "traits": {
+      "value": ["archetype"],
+      "rarity": "common"
+    },
+    "level": { "value": 8 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Haki Dedication" }]
+    },
+    "actionType": { "value": "passive" },
+    "actions": { "value": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": { "archetypeSlug": "haki" }
+  }
+}

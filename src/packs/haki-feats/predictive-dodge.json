@@ -1,0 +1,29 @@
+{
+  "_id": "predictiveDodge1",
+  "_key": "!items!predictiveDodge1",
+  "name": "Predictive Dodge",
+  "type": "feat",
+  "img": "icons/magic/movement/trail-streak-impact-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[reaction] Archetype</strong></p><p><strong>Trigger</strong> A creature you are aware of makes an attack roll against you.</p><p>Your Observation Haki senses the intent of the attack a split second before it lands. You read the attacker's killing intent and shift your footing at the last moment. You gain a <strong>+2 circumstance bonus to AC</strong> against the triggering attack.</p><p>If the attack still hits despite this bonus, you gain a <strong>+1 circumstance bonus to your saving throw</strong> against any effect the attack delivers (such as a poison, condition, or spell).</p>",
+      "gm": ""
+    },
+    "rules": [],
+    "slug": "predictive-dodge",
+    "traits": {
+      "value": ["archetype"],
+      "rarity": "common"
+    },
+    "level": { "value": 4 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Haki Dedication" }]
+    },
+    "actionType": { "value": "reaction" },
+    "actions": { "value": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": { "archetypeSlug": "haki" }
+  }
+}

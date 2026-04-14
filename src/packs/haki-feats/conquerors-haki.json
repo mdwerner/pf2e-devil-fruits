@@ -1,0 +1,32 @@
+{
+  "_id": "conquerorsHaki01",
+  "_key": "!items!conquerorsHaki01",
+  "name": "Conqueror's Haki",
+  "type": "feat",
+  "img": "icons/skills/social/intimidation-fear-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[2 actions] Archetype, Concentrate, Emotion, Fear, Mental</strong></p><p>Only one in a million people are born with the innate capacity for Conqueror's Haki — the power to impose your will upon the world. You are one of them.</p><p>You release a burst of overwhelming spiritual pressure. All enemies within a <strong>30-foot burst</strong> must attempt a Will saving throw against your <strong>class DC</strong>.</p><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature is <strong>Frightened 1</strong>.</p><p><strong>Failure</strong> The creature is <strong>Stunned 1</strong> and <strong>Frightened 2</strong>.</p><p><strong>Critical Failure</strong> The creature is <strong>Stunned 2</strong> and <strong>Frightened 3</strong>. It falls unconscious if it has fewer than half its maximum Hit Points remaining.</p><p>Creatures whose level is 4 or more below yours automatically suffer a critical failure result. Allies in the area are unaffected.</p><p><strong>Frequency</strong> Once per encounter.</p>",
+      "gm": "<p>Conqueror's Haki is intentionally gated as Rare. Only award this feat to characters for whom it is narratively appropriate — the power can't be trained into existence, only unlocked. In One Piece, characters like Shanks, Luffy, and Whitebeard have it; trained soldiers generally do not. The 'one in a million' framing gives you narrative cover to restrict it. The save DC uses class DC to scale appropriately with the character's primary build.</p>"
+    },
+    "rules": [],
+    "slug": "conquerors-haki",
+    "traits": {
+      "value": ["archetype", "concentrate", "emotion", "fear", "mental"],
+      "rarity": "rare"
+    },
+    "level": { "value": 10 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [
+        { "value": "Haki Dedication" },
+        { "value": "GM must determine the character possesses innate Conqueror's potential" }
+      ]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 2 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": { "archetypeSlug": "haki" }
+  }
+}

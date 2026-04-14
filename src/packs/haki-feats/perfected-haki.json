@@ -1,0 +1,29 @@
+{
+  "_id": "perfectedHaki001",
+  "_key": "!items!perfectedHaki001",
+  "name": "Perfected Haki",
+  "type": "feat",
+  "img": "icons/magic/holy/prayer-hands-glowing-yellow-white.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Archetype</strong></p><p>You have mastered Haki to a degree few living beings have ever achieved. All three forms flow through you like breathing — constant, effortless, and absolute.</p><p><strong>Observation:</strong></p><ul><li>Your precise sense range extends to <strong>60 feet</strong>.</li><li>You gain the effect of <strong>true seeing</strong> (as the 7th-level spell) at all times — illusions, invisibility, and magical concealment cannot fool you.</li><li>Your <strong>Brief Future Sight</strong> (from Observation Mastery) can be used <strong>three times per day</strong> instead of once.</li></ul><p><strong>Armament:</strong></p><ul><li>While Armament Haki is active, you gain <strong>immunity to critical hits from physical attacks</strong>. Attacks still hit and deal normal damage; they simply cannot achieve a critical hit result against you.</li><li>Your Armament Haki now activates <strong>automatically at the start of each encounter</strong>, at no action cost.</li></ul><p><strong>Conqueror's (if you possess it):</strong></p><ul><li><strong>Conqueror's Haki</strong> recharges after <strong>10 minutes</strong> instead of once per encounter.</li><li>The burst radius of Conqueror's Haki increases to <strong>60 feet</strong>.</li></ul>",
+      "gm": "<p>Perfected Haki is deliberately powerful — it is the level 20 capstone of this archetype. The critical hit immunity is the standout defensive benefit; communicate clearly to your players that it only applies while Armament Haki is active. True seeing at will is extremely powerful; if it feels like it degrades your encounters, you may rule it functions as 10-minute increments rather than a permanent effect.</p>"
+    },
+    "rules": [],
+    "slug": "perfected-haki",
+    "traits": {
+      "value": ["archetype"],
+      "rarity": "uncommon"
+    },
+    "level": { "value": 20 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Haki Dedication" }]
+    },
+    "actionType": { "value": "passive" },
+    "actions": { "value": null }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": { "archetypeSlug": "haki" }
+  }
+}

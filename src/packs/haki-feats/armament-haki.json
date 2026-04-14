@@ -1,0 +1,29 @@
+{
+  "_id": "armamentHaki0001",
+  "_key": "!items!armamentHaki0001",
+  "name": "Armament Haki",
+  "type": "feat",
+  "img": "icons/skills/melee/unarmed-punch-fist-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[1 action] Archetype, Concentrate</strong></p><p>You harden your body with invisible Armament Haki, coating your limbs and weapon in dense spiritual force. For <strong>1 minute</strong>, you gain the following benefits:</p><ul><li>Your unarmed strikes and held weapons gain the <strong>magical</strong> trait.</li><li>Your Strikes deal <strong>+1d6 bonus damage</strong> of the same damage type as the attack (bludgeoning, piercing, or slashing).</li><li>You gain <strong>resistance 3 to physical damage</strong> (bludgeoning, piercing, and slashing).</li><li>Your Strikes bypass physical <strong>resistances up to 5</strong>. This allows you to harm creatures with the Sea-Bound trait who otherwise have physical resistances from Logia Devil Fruits or similar abilities.</li></ul><p>Armament Haki ends early if you are knocked unconscious.</p><p><em>Logia users — those whose bodies become an element — can be harmed by Armament Haki even in their elemental form.</em></p>",
+      "gm": "<p>The resistance bypass (up to 5) is intentional — it allows low-level characters to affect Logia-type Devil Fruit users without making Armament Haki an automatic win. Advanced Armament (level 14) removes the bypass cap entirely. The magical trait on strikes is also relevant for overcoming resistances to non-magical attacks.</p>"
+    },
+    "rules": [],
+    "slug": "armament-haki",
+    "traits": {
+      "value": ["archetype", "concentrate"],
+      "rarity": "common"
+    },
+    "level": { "value": 4 },
+    "featType": { "value": "archetype" },
+    "prerequisites": {
+      "value": [{ "value": "Haki Dedication" }]
+    },
+    "actionType": { "value": "action" },
+    "actions": { "value": 1 }
+  },
+  "flags": {
+    "pf2e-devil-fruit-artifacts": { "archetypeSlug": "haki" }
+  }
+}
