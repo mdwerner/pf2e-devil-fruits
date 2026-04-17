@@ -38,6 +38,7 @@
       "path": "packs/devil-fruit-artifacts",
       "type": "Item",
       "system": "pf2e",
+      "folder": "PF2e Devil Fruits",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
@@ -49,6 +50,7 @@
       "path": "packs/seastone-items",
       "type": "Item",
       "system": "pf2e",
+      "folder": "PF2e Devil Fruits",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
@@ -60,6 +62,7 @@
       "path": "packs/sea-bound-effects",
       "type": "Item",
       "system": "pf2e",
+      "folder": "PF2e Devil Fruits",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
@@ -70,6 +73,7 @@
       "label": "Devil Fruit Macros",
       "path": "packs/macros",
       "type": "Macro",
+      "folder": "PF2e Devil Fruits",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
@@ -81,6 +85,7 @@
       "path": "packs/devil-fruit-feats",
       "type": "Item",
       "system": "pf2e",
+      "folder": "PF2e Devil Fruits",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
@@ -92,6 +97,7 @@
       "path": "packs/devil-fruit-effects",
       "type": "Item",
       "system": "pf2e",
+      "folder": "PF2e Devil Fruits",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
@@ -103,6 +109,7 @@
       "path": "packs/navigation-items",
       "type": "Item",
       "system": "pf2e",
+      "folder": "PF2e Devil Fruits",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
@@ -114,6 +121,7 @@
       "path": "packs/haki-feats",
       "type": "Item",
       "system": "pf2e",
+      "folder": "PF2e Devil Fruits",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
@@ -125,6 +133,7 @@
       "path": "packs/den-den-mushi",
       "type": "Actor",
       "system": "pf2e",
+      "folder": "PF2e Devil Fruits",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
